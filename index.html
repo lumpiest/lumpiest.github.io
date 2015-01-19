@@ -95,11 +95,12 @@
 </header>
     <div class="article-content">
         
-        <p>1 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：<br>function repeat(fn, times, delay) {<br>    return function() {<br>        if (times— &gt; 0) {<br>            fn.apply(null, arguments);<br>            var args = Array.prototype.slice.call(arguments);<br>            var self = arguments.callee;<br>            setTimeout(function(){self.apply(null,args)}, delay);<br>        }<br>   };<br>}</p>
-
+        <p>一些有趣的小东西<br>
         
         
         <p class="article-more-link">
+          
+            <a href="/2015/01/19/JavaScript/#more">Read More</a>
           
        </p>
     </div>
@@ -310,9 +311,9 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
 		
-			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
 		
 			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
 		
@@ -320,9 +321,9 @@
 		
 			<li><a href="/tags/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
 		
-			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
 		
-			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
 		
 		</ul>
 </div>
