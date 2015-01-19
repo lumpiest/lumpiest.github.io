@@ -82,6 +82,61 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2015/01/19/JavaScript/" title="JavaScript" itemprop="url">JavaScript</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://fffgroups.com/about" title="JJ" target="_blank" itemprop="author">JJ</a>
+		
+  <p class="article-time">
+    <time datetime="2015-01-19T06:22:33.000Z" itemprop="datePublished"> Published Jan 19 2015</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>1 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：<br>function repeat(fn, times, delay) {<br>    return function() {<br>        if (times— &gt; 0) {<br>            fn.apply(null, arguments);<br>            var args = Array.prototype.slice.call(arguments);<br>            var self = arguments.callee;<br>            setTimeout(function(){self.apply(null,args)}, delay);<br>        }<br>   };<br>}</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/JavaScript/">JavaScript</a><a href="/tags/js/">js</a><a href="/tags/笔记/">笔记</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2015/01/17/eng/" title="某些可能需要的东西" itemprop="url">某些可能需要的东西</a>
   </h1>
   <p class="article-author">By
@@ -255,13 +310,19 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
-		
-			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
-		
 			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
 		
 			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+		
+			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
+		
+			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
+		
+			<li><a href="/tags/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
+		
+			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
+		
+			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
 		
 		</ul>
 </div>
