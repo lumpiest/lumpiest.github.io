@@ -4,23 +4,38 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>JavaScript | FFFGroups 成员之一</title>
+    <title>apache，PHP 本地搭建 | FFFGroups 成员之一</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JJ">
     
-    <meta name="description" content="一些有趣的小东西">
+    <meta name="description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比">
     
     
-    <meta name="description" content="一些有趣的小东西">
+    <meta name="description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比的安装方式：控制台
+1php -i &gt;a.txt
+
+
+
+1234567891011121314">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript">
-<meta property="og:url" content="http://fffgroups.com/2015/01/19/JavaScript/">
+<meta property="og:title" content="apache，PHP 本地搭建">
+<meta property="og:url" content="http://fffgroups.com/2015/01/20/PHP/">
 <meta property="og:site_name" content="FFFGroups 成员之一">
-<meta property="og:description" content="一些有趣的小东西">
+<meta property="og:description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比的安装方式：控制台
+1php -i &gt;a.txt
+
+
+
+1234567891011121314">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript">
-<meta name="twitter:description" content="一些有趣的小东西">
+<meta name="twitter:title" content="apache，PHP 本地搭建">
+<meta name="twitter:description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比的安装方式：控制台
+1php -i &gt;a.txt
+
+
+
+1234567891011121314">
 
 
     
@@ -80,14 +95,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/01/19/JavaScript/" title="JavaScript" itemprop="url">JavaScript</a>
+      <a href="/2015/01/20/PHP/" title="apache，PHP 本地搭建" itemprop="url">apache，PHP 本地搭建</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://fffgroups.com/about" title="JJ" target="_blank" itemprop="author">JJ</a>
 		
   <p class="article-time">
-    <time datetime="2015-01-19T06:22:33.000Z" itemprop="datePublished"> Published Jan 19 2015</time>
+    <time datetime="2015-01-20T12:38:18.000Z" itemprop="datePublished"> Published Jan 20 2015</time>
     
   </p>
 </header>
@@ -96,12 +111,16 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">没去找blog，纯手动参照manual搭建注意</span></a></li></ol>
 		
 		</div>
 		
-		<p>一些有趣的小东西<br><a id="more"></a><br>1 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function repeat(fn, times, delay) {</div><div class="line">    return function() {</div><div class="line">        if (times-- &gt; 0) {</div><div class="line">            fn.apply(null, arguments);</div><div class="line">            var args = Array.prototype.slice.call(arguments);</div><div class="line">            var self = arguments.callee;</div><div class="line">            setTimeout(function(){self.apply(null,args)}, delay);</div><div class="line">        }</div><div class="line">   };</div><div class="line">}</div></pre></td></tr></table></figure>
+		<p><h2>没去找blog，纯手动参照manual搭建注意</h2><br>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>Apache 2.4.10 Win64<br>2、 php php.ini修改<br>extension_dir<br>include_path<br>全部都是绝对路径<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php -i &gt;a.txt</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">Tailored Installation Instructions</div><div class="line"></div><div class="line">Summary</div><div class="line"></div><div class="line">Xdebug installed: no</div><div class="line">Server API: Command Line Interface</div><div class="line">Windows: yes - Compiler: MS VC11 - Architecture: x64</div><div class="line">Zend Server: no</div><div class="line">PHP Version: 5.6.4</div><div class="line">Zend API nr: 220131226</div><div class="line">PHP API nr: 20131226</div><div class="line">Debug Build: no</div><div class="line">Thread Safe Build: yes</div><div class="line">Configuration File Path: C:\windows</div><div class="line">Configuration File: D:\GAME\php-5.6.4-Win32-VC11-x64\php.ini</div><div class="line">Extensions directory: D:\GAME\php-5.6.4-Win32-VC11-x64\ext</div><div class="line">Instructions</div><div class="line"></div><div class="line">Download php_xdebug-2.2.6-5.6-vc11-x86_64.dll</div><div class="line">Move the downloaded file to D:\GAME\php-5.6.4-Win32-VC11-x64\ext</div><div class="line">Edit D:\GAME\php-5.6.4-Win32-VC11-x64\php.ini and add the line</div><div class="line">zend_extension = D:\GAME\php-5.6.4-Win32-VC11-x64\ext\php_xdebug-2.2.6-5.6-vc11-x86_64.dll</div></pre></td></tr></table></figure>
 
   
 	</div>
@@ -111,7 +130,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/JavaScript/">JavaScript</a><a href="/tags/js/">js</a><a href="/tags/笔记/">笔记</a>
+  <span></span> <a href="/tags/php/">php</a><a href="/tags/apache/">apache</a><a href="/tags/服务器/">服务器</a>
   </div>
 
 </div>
@@ -120,7 +139,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://fffgroups.com/2015/01/19/JavaScript/" data-title="JavaScript | FFFGroups 成员之一" data-tsina="null" class="share clearfix">
+	  <div data-url="http://fffgroups.com/2015/01/20/PHP/" data-title="apache，PHP 本地搭建 | FFFGroups 成员之一" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,19 +152,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/01/20/PHP/" title="apache，PHP 本地搭建">
-  <strong>上一篇：</strong><br/>
-  <span>
-  apache，PHP 本地搭建</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/01/17/eng/"  title="某些可能需要的东西">
+<a href="/2015/01/19/JavaScript/"  title="JavaScript">
  <strong>下一篇：</strong><br/> 
- <span>某些可能需要的东西
+ <span>JavaScript
 </span>
 </a>
 </div>
@@ -160,7 +171,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">没去找blog，纯手动参照manual搭建注意</span></a></li></ol>
  
   </div>
 
