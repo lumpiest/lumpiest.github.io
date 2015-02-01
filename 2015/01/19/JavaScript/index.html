@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>JavaScript | FFFGroups 成员之一</title>
+    <title>JavaScript笔记 | FFFGroups 成员之一</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JJ">
@@ -14,12 +14,12 @@
     
     <meta name="description" content="一些有趣的小东西">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript">
+<meta property="og:title" content="JavaScript笔记">
 <meta property="og:url" content="http://fffgroups.com/2015/01/19/JavaScript/">
 <meta property="og:site_name" content="FFFGroups 成员之一">
 <meta property="og:description" content="一些有趣的小东西">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript">
+<meta name="twitter:title" content="JavaScript笔记">
 <meta name="twitter:description" content="一些有趣的小东西">
 
 
@@ -80,7 +80,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/01/19/JavaScript/" title="JavaScript" itemprop="url">JavaScript</a>
+      <a href="/2015/01/19/JavaScript/" title="JavaScript笔记" itemprop="url">JavaScript笔记</a>
   </h1>
   <p class="article-author">By
        
@@ -100,8 +100,17 @@
 		
 		</div>
 		
-		<p>一些有趣的小东西<br><a id="more"></a><br>1 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：</p>
+		<p>一些有趣的小东西<br><a id="more"></a><br>1、 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function repeat(fn, times, delay) {</div><div class="line">    return function() {</div><div class="line">        if (times-- &gt; 0) {</div><div class="line">            fn.apply(null, arguments);</div><div class="line">            var args = Array.prototype.slice.call(arguments);</div><div class="line">            var self = arguments.callee;</div><div class="line">            setTimeout(function(){self.apply(null,args)}, delay);</div><div class="line">        }</div><div class="line">   };</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>2、等于</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (amount=<span class="number">1000</span>){ <span class="comment">//永远成立 always true</span></div><div class="line">  alert(<span class="string">"It's less the 1000"</span>);</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>=    assignment<br>==   equality<br>===  strict equality<br>if (a == b) { …<br>if (a != b) { …<br>if (a === b) { …<br>if (a !== b) { …<br>if (a &gt; b) { …<br>if (a &lt; b) { …<br>if (a &gt;= b) { …<br>if (a &lt;= b) { …<br>&amp;&amp;<br>||<br>a=a+1 a+=1 a++ ++a 烦人的++—<br>condition ? true : false 三元</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> playerOne = <span class="number">500</span>;</div><div class="line"><span class="keyword">var</span> playerTwo = <span class="number">600</span>;</div><div class="line"><span class="keyword">var</span> highScore;<span class="comment">//等于var highScore=(playerOne&gt;playerTwo)?playerOne:playerTwo;</span></div><div class="line"><span class="keyword">if</span> (playerOne &gt; playerTwo) { </div><div class="line">highScore = playerOne;</div><div class="line">} <span class="keyword">else</span> {</div><div class="line">highScore = playerTwo;</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>setup index -&gt; check condition -&gt; increment</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">1</span> ;i &lt; <span class="number">10</span> ;i++){</div><div class="line"><span class="comment">// do stuff       </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// etc..</span></div><div class="line">}</div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">1</span> ; i &lt; <span class="number">5000</span> ; i++ ) {</div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line">    <span class="keyword">if</span> (i == <span class="number">101</span>) { </div><div class="line">    <span class="keyword">break</span>; <span class="comment">//跳出循环</span></div><div class="line">    }</div><div class="line"><span class="comment">// do stuff</span></div><div class="line">}</div><div class="line"><span class="comment">// break jumps out of the loop</span></div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">1</span> ; i &lt; <span class="number">5000</span> ; i++ ) {</div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line">    <span class="keyword">if</span> (i % <span class="number">5</span> == <span class="number">0</span>) { </div><div class="line">    <span class="keyword">continue</span>;<span class="comment">//重新检查for的条件，跳过continue下面的语句</span></div><div class="line">    }</div><div class="line"><span class="comment">// do second set of stuff </span></div><div class="line"><span class="comment">// do second set of stuff</span></div><div class="line">}</div><div class="line"><span class="keyword">var</span> a=<span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> b=<span class="number">20</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span><span class="params">(a,b)</span></span>{</div><div class="line">    <span class="keyword">if</span> (a&gt;b){</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> b;</div><div class="line">}</div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="literal">null</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 undefined Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,),<span class="string">"Logged!"</span>);<span class="comment">//输出 error</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="string">''</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="string">""</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div></pre></td></tr></table></figure>
 
   
 	</div>
@@ -111,7 +120,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/JavaScript/">JavaScript</a><a href="/tags/js/">js</a><a href="/tags/笔记/">笔记</a>
+  <span></span> <a href="/tags/javascript/">javascript</a><a href="/tags/js/">js</a><a href="/tags/笔记/">笔记</a>
   </div>
 
 </div>
@@ -120,7 +129,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://fffgroups.com/2015/01/19/JavaScript/" data-title="JavaScript | FFFGroups 成员之一" data-tsina="null" class="share clearfix">
+	  <div data-url="http://fffgroups.com/2015/01/19/JavaScript/" data-title="JavaScript笔记 | FFFGroups 成员之一" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -175,11 +184,9 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
+			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
 		
-			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
-		
-			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
 		
 			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
 		
@@ -191,23 +198,25 @@
 		
 			<li><a href="/tags/snapshot/" title="snapshot">snapshot<sup>1</sup></a></li>
 		
-			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
+			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
 		
-			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
-		
-			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
-		
-			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
+			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
 		
 			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
 		
 			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
 		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+		
 			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
 		
-			<li><a href="/tags/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
+			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
 		
-			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
+			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
+		
+			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
 		
 		</ul>
 </div>
