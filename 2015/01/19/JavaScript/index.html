@@ -18,6 +18,7 @@
 <meta property="og:url" content="http://fffgroups.com/2015/01/19/JavaScript/">
 <meta property="og:site_name" content="FFFGroups 成员之一">
 <meta property="og:description" content="一些有趣的小东西">
+<meta property="og:image" content="img/catch2.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript笔记">
 <meta name="twitter:description" content="一些有趣的小东西">
@@ -96,7 +97,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#part1"><span class="toc-number">1.</span> <span class="toc-text">part1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part2"><span class="toc-number">2.</span> <span class="toc-text">part2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part3"><span class="toc-number">3.</span> <span class="toc-text">part3</span></a></li></ol>
 		
 		</div>
 		
@@ -112,6 +113,19 @@
 <p>setup index -&gt; check condition -&gt; increment</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">1</span> ;i &lt; <span class="number">10</span> ;i++){</div><div class="line"><span class="comment">// do stuff       </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// etc..</span></div><div class="line">}</div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">1</span> ; i &lt; <span class="number">5000</span> ; i++ ) {</div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line">    <span class="keyword">if</span> (i == <span class="number">101</span>) { </div><div class="line">    <span class="keyword">break</span>; <span class="comment">//跳出循环</span></div><div class="line">    }</div><div class="line"><span class="comment">// do stuff</span></div><div class="line">}</div><div class="line"><span class="comment">// break jumps out of the loop</span></div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">1</span> ; i &lt; <span class="number">5000</span> ; i++ ) {</div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line">    <span class="keyword">if</span> (i % <span class="number">5</span> == <span class="number">0</span>) { </div><div class="line">    <span class="keyword">continue</span>;<span class="comment">//重新检查for的条件，跳过continue下面的语句</span></div><div class="line">    }</div><div class="line"><span class="comment">// do second set of stuff </span></div><div class="line"><span class="comment">// do second set of stuff</span></div><div class="line">}</div><div class="line"><span class="keyword">var</span> a=<span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> b=<span class="number">20</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span><span class="params">(a,b)</span></span>{</div><div class="line">    <span class="keyword">if</span> (a&gt;b){</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> b;</div><div class="line">}</div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="literal">null</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 undefined Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,),<span class="string">"Logged!"</span>);<span class="comment">//输出 error</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="string">''</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="string">""</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div></pre></td></tr></table></figure>
 
+<p>OBJECT CREATION: SHORTHAND</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> playerl ={ name: <span class="string">"Fred"</span>, score: <span class="number">10000</span>, rank: <span class="number">1</span> };</div><div class="line"><span class="keyword">var</span> player2 = { name: <span class="string">"Sam"</span>, score: <span class="number">10000000</span>, rank: <span class="number">5</span> };</div><div class="line"><span class="built_in">console</span>.log(player1.name);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">playerDetails</span><span class="params">()</span> </span>{</div><div class="line"><span class="comment">// display information about each player </span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">" has a rank of: "</span> + <span class="keyword">this</span>.rank + <span class="string">" and a score of "</span> + <span class="keyword">this</span>.score);</div><div class="line">}</div><div class="line">playerl.logDetails = playerDetails;</div><div class="line">player2.logDetails = playerDetails;</div><div class="line">playerl.logDetails();</div><div class="line"></div><div class="line"><span class="keyword">var</span> myListItems=<span class="built_in">document</span>.getElementsByTagName(<span class="string">"td"</span>);</div><div class="line"><span class="comment">//var limitedList=myListItems.getElementsByTagName("a");</span></div><div class="line"><span class="built_in">console</span>.log(limitedList);</div><div class="line"><span class="built_in">console</span>.log(myListItems);</div><div class="line"><span class="comment">//var x = document.getElementById("td").length;//.getElementsByTagName("P")</span></div><div class="line"><span class="built_in">console</span>.log(myListItems.length);</div><div class="line"><span class="comment">//数组array要加[0]复数</span></div><div class="line"><span class="keyword">var</span> myNewElement = <span class="built_in">document</span>.createElement(<span class="string">"li"</span>);</div><div class="line">myNewElement.innerHTML = <span class="string">"New item text"</span>;</div><div class="line"><span class="comment">//myElement.appendChild(myNewElement);</span></div><div class="line"><span class="built_in">document</span>.getElementsByClassName(<span class="string">"box1"</span>)[<span class="number">0</span>].appendChild(myNewElement);</div><div class="line"><span class="comment">//单数</span></div><div class="line"><span class="keyword">var</span> myNewElement = <span class="built_in">document</span>.createElement(<span class="string">"li"</span>);</div><div class="line">myNewElement.innerHTML = <span class="string">"New item text"</span>;</div><div class="line"><span class="comment">//myElement.appendChild(myNewElement);</span></div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"trivia"</span>).appendChild(myNewElement);</div><div class="line"><span class="comment">//盒子</span></div><div class="line"><span class="keyword">var</span> myListItems=<span class="built_in">document</span>.getElementsByClassName(<span class="string">"box1"</span>);</div><div class="line"><span class="keyword">var</span> limitedList=myListItems[<span class="number">0</span>].getElementsByTagName(<span class="string">"a"</span>);</div><div class="line"><span class="comment">//console.log(myListItems);</span></div><div class="line"><span class="built_in">console</span>.log(limitedList);</div><div class="line"><span class="comment">//var x = document.getElementById("td").length;//.getElementsByTagName("P")</span></div><div class="line"><span class="built_in">console</span>.log(limitedList.length);</div><div class="line"><span class="keyword">var</span> x=<span class="built_in">Math</span>.random();<span class="comment">//生成0-1中间的随机数</span></div><div class="line">x=<span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.abs(x)*limitedList.length)<span class="comment">//生成1-limitedList.length（还没有点击的盒子数目）中的随机数</span></div><div class="line"><span class="built_in">console</span>.log(limitedList[x]);</div><div class="line"><span class="keyword">var</span> y= <span class="keyword">new</span> <span class="built_in">String</span>();</div><div class="line">y=limitedList[x];</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(y));<span class="comment">//艹y为什么不是string</span></div><div class="line"><span class="comment">//console.log(y.toString());</span></div><div class="line">y=y.toString();<span class="comment">//转换Object to String</span></div><div class="line"><span class="comment">//y=y.slice(9,-2);//直接看会有多余的HTML标记</span></div><div class="line"><span class="built_in">console</span>.log(y);</div><div class="line">location.replace(y);<span class="comment">//网页重定向</span></div><div class="line"><span class="comment">//收集html信息</span></div><div class="line"><span class="keyword">var</span> getText = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'span'</span>);</div><div class="line"><span class="built_in">console</span>.log(getText[<span class="number">0</span>].innerHTML);</div><div class="line"><span class="comment">/*var y = getText[0];</span></div><div class="line">console.log(typeof (y));</div><div class="line">console.log(y.toString());</div><div class="line">console.log(y.toString.innerHTML());</div><div class="line">console.log(y);*/</div><div class="line"><span class="comment">//首页</span></div><div class="line"><span class="keyword">var</span> inbox6=<span class="built_in">document</span>.getElementsByClassName(<span class="string">"indbox6"</span>);</div><div class="line"><span class="built_in">console</span>.log(inbox6);</div><div class="line">inbox6[<span class="number">1</span>].innerHTML=inbox6[<span class="number">1</span>].innerHTML + <span class="string">'Auto Click!'</span>;</div></pre></td></tr></table></figure>
+
+<p>放弃整体调教苍雪娘了，功力不够，单独页面单独来吧</p>
+<h3 id="part1">part1</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> inbox6 = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'indbox6'</span>);</div><div class="line"><span class="built_in">console</span>.log(inbox6);</div><div class="line">inbox6[<span class="number">1</span>].innerHTML = inbox6[<span class="number">1</span>].innerHTML + <span class="string">'Auto Click!'</span>; <span class="comment">//选用iframe方式，放弃button方式</span></div><div class="line"><span class="comment">//window.inbox6[1].target = 'IFRAME';</span></div><div class="line"><span class="built_in">console</span>.log(inbox6[<span class="number">1</span>].target);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.inbox6[<span class="number">1</span>].target); <span class="comment">//firebug里面查看脚本找到的具体的路径</span></div><div class="line"><span class="keyword">var</span> x = <span class="built_in">document</span>.createElement(<span class="string">'iframe'</span>);</div><div class="line">x.width = <span class="number">295</span>;</div><div class="line">x.height = <span class="number">400</span>;</div><div class="line">x.id=<span class="string">"MyIFrame"</span>;</div><div class="line">x.src=<span class="string">"kf_smbox.php"</span></div><div class="line">x.innerHTML=<span class="string">"http://bbs.2dgal.com/kf_smbox.php"</span></div><div class="line">inbox6[<span class="number">1</span>].appendChild(x);</div><div class="line"><span class="keyword">var</span> getText =<span class="built_in">document</span>.getElementById(<span class="string">"MyIFrame"</span>).contentDocument.getElementsByTagName(<span class="string">"span"</span>);</div><div class="line"><span class="built_in">console</span>.log(getText.innerHTML);</div></pre></td></tr></table></figure>
+
+<h3 id="part2">part2</h3>
+<p><img src="img/catch2.png" alt="源码示例"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> getText = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'span'</span>);</div><div class="line"><span class="built_in">console</span>.log(getText[<span class="number">0</span>].innerHTML);</div></pre></td></tr></table></figure>
+
+<h3 id="part3">part3</h3>
+<p>document.onclick<br>FF认定左右键都算点击<br>Chrome认定只有左键才算</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -120,7 +134,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/javascript/">javascript</a><a href="/tags/js/">js</a><a href="/tags/笔记/">笔记</a>
+  <span></span> <a href="/tags/javascript/">javascript</a><a href="/tags/js/">js</a><a href="/tags/笔记/">笔记</a><a href="/tags/苍雪/">苍雪</a><a href="/tags/FireFox/">FireFox</a><a href="/tags/Chrome/">Chrome</a>
   </div>
 
 </div>
@@ -169,7 +183,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#part1"><span class="toc-number">1.</span> <span class="toc-text">part1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part2"><span class="toc-number">2.</span> <span class="toc-text">part2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part3"><span class="toc-number">3.</span> <span class="toc-text">part3</span></a></li></ol>
  
   </div>
 
@@ -184,23 +198,9 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
-		
-			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
-		
-			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
-		
-			<li><a href="/tags/截图/" title="截图">截图<sup>1</sup></a></li>
-		
-			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-		
-			<li><a href="/tags/snapshot/" title="snapshot">snapshot<sup>1</sup></a></li>
-		
-			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
-		
-			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
-		
 			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
 		
 			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
 		
@@ -208,15 +208,35 @@
 		
 			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
 		
-			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
+			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
+		
+			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
+		
+			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
+		
+			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
 		
 			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
 		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/snapshot/" title="snapshot">snapshot<sup>1</sup></a></li>
+		
+			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
+		
+			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
+		
+			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
+		
+			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
+		
+			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
+		
 			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
 		
-			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
-		
-			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
+			<li><a href="/tags/截图/" title="截图">截图<sup>1</sup></a></li>
 		
 		</ul>
 </div>
