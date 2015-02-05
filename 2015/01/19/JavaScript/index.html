@@ -18,7 +18,7 @@
 <meta property="og:url" content="http://fffgroups.com/2015/01/19/JavaScript/">
 <meta property="og:site_name" content="FFFGroups 成员之一">
 <meta property="og:description" content="一些有趣的小东西">
-<meta property="og:image" content="/img/catch2.png">
+<meta property="og:image" content="/img/catch2.PNG">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript笔记">
 <meta name="twitter:description" content="一些有趣的小东西">
@@ -121,7 +121,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> inbox6 = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'indbox6'</span>);</div><div class="line"><span class="built_in">console</span>.log(inbox6);</div><div class="line">inbox6[<span class="number">1</span>].innerHTML = inbox6[<span class="number">1</span>].innerHTML + <span class="string">'Auto Click!'</span>; <span class="comment">//选用iframe方式，放弃button方式</span></div><div class="line"><span class="comment">//window.inbox6[1].target = 'IFRAME';</span></div><div class="line"><span class="built_in">console</span>.log(inbox6[<span class="number">1</span>].target);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.inbox6[<span class="number">1</span>].target); <span class="comment">//firebug里面查看脚本找到的具体的路径</span></div><div class="line"><span class="keyword">var</span> x = <span class="built_in">document</span>.createElement(<span class="string">'iframe'</span>);</div><div class="line">x.width = <span class="number">295</span>;</div><div class="line">x.height = <span class="number">400</span>;</div><div class="line">x.id=<span class="string">"MyIFrame"</span>;</div><div class="line">x.src=<span class="string">"kf_smbox.php"</span></div><div class="line">x.innerHTML=<span class="string">"http://bbs.2dgal.com/kf_smbox.php"</span></div><div class="line">inbox6[<span class="number">1</span>].appendChild(x);</div><div class="line"><span class="keyword">var</span> getText =<span class="built_in">document</span>.getElementById(<span class="string">"MyIFrame"</span>).contentDocument.getElementsByTagName(<span class="string">"span"</span>);</div><div class="line"><span class="built_in">console</span>.log(getText.innerHTML);</div></pre></td></tr></table></figure>
 
 <h3 id="part2">part2</h3>
-<p><img src="/img/catch2.png" alt="源码示例"></p>
+<p><img src="/img/catch2.PNG" alt="源码示例"></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> getText = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'span'</span>);</div><div class="line"><span class="built_in">console</span>.log(getText[<span class="number">0</span>].innerHTML);</div></pre></td></tr></table></figure>
 
 <h3 id="part3">part3</h3>
@@ -198,25 +198,7 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
-		
-			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
-		
-			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
-		
-			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
-		
-			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
-		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
-		
-			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
-		
-			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
-		
-			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
-		
-			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
+			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
 		
 			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
 		
@@ -234,9 +216,27 @@
 		
 			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
 		
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+		
 			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
 		
-			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
+			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
+		
+			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
+		
+			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
+		
+			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
+		
+			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
+		
+			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
+		
+			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
 		
 		</ul>
 </div>
