@@ -9,19 +9,19 @@
     
     <meta name="author" content="JJ">
     
-    <meta name="description" content="一些有趣的小东西">
+    <meta name="description" content="一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。">
     
     
-    <meta name="description" content="一些有趣的小东西">
+    <meta name="description" content="一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript笔记">
 <meta property="og:url" content="http://fffgroups.com/2015/01/19/JavaScript/">
 <meta property="og:site_name" content="FFFGroups 成员之一">
-<meta property="og:description" content="一些有趣的小东西">
+<meta property="og:description" content="一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。">
 <meta property="og:image" content="/img/catch2.PNG">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript笔记">
-<meta name="twitter:description" content="一些有趣的小东西">
+<meta name="twitter:description" content="一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。">
 
 
     
@@ -101,8 +101,8 @@
 		
 		</div>
 		
-		<p>一些有趣的小东西<br><a id="more"></a><br>1、 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function repeat(fn, times, delay) {</div><div class="line">    return function() {</div><div class="line">        if (times-- &gt; 0) {</div><div class="line">            fn.apply(null, arguments);</div><div class="line">            var args = Array.prototype.slice.call(arguments);</div><div class="line">            var self = arguments.callee;</div><div class="line">            setTimeout(function(){self.apply(null,args)}, delay);</div><div class="line">        }</div><div class="line">   };</div><div class="line">}</div></pre></td></tr></table></figure>
+		<p>一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。<br><a id="more"></a><br>1、 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">repeat</span><span class="params">(fn, times, delay)</span> </span>{</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        <span class="keyword">if</span> (times-- &gt; <span class="number">0</span>) {</div><div class="line">            fn.apply(<span class="literal">null</span>, <span class="built_in">arguments</span>);</div><div class="line">            <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</div><div class="line">            <span class="keyword">var</span> self = <span class="built_in">arguments</span>.callee;</div><div class="line">            setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{self.apply(<span class="literal">null</span>,args)}, delay);</div><div class="line">        }</div><div class="line">   };</div><div class="line">}</div></pre></td></tr></table></figure>
 
 <p>2、等于</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (amount=<span class="number">1000</span>){ <span class="comment">//永远成立 always true</span></div><div class="line">  alert(<span class="string">"It's less the 1000"</span>);</div><div class="line">}</div></pre></td></tr></table></figure>
@@ -198,6 +198,14 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
+			<li><a href="/tags/test/" title="test">test<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+		
+			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
+		
 			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
 		
 			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
@@ -210,33 +218,25 @@
 		
 			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
 		
-			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
-		
 			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
-		
-			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
-		
-			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
-		
-			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
-		
-			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
-		
-			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
 		
 			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
 		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
+			<li><a href="/tags/sphinx/" title="sphinx">sphinx<sup>1</sup></a></li>
 		
-			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
-		
-			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+			<li><a href="/tags/索引/" title="索引">索引<sup>1</sup></a></li>
 		
 			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
+		
+			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
 		
 			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
 		
 			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
+		
+			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
+		
+			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
 		
 		</ul>
 </div>

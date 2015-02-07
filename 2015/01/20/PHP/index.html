@@ -9,33 +9,19 @@
     
     <meta name="author" content="JJ">
     
-    <meta name="description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比">
+    <meta name="description" content="1、 apache 没找到放到其他目录的方式，直接丢C盘了2、 php php.ini修改3、 xdebug http://xdebug.org/逗比的安装方式：控制台4、sphinx折腾">
     
     
-    <meta name="description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比的安装方式：控制台
-1php -i &gt;a.txt
-
-
-
-1234567891011121314">
+    <meta name="description" content="1、 apache 没找到放到其他目录的方式，直接丢C盘了2、 php php.ini修改3、 xdebug http://xdebug.org/逗比的安装方式：控制台4、sphinx折腾">
 <meta property="og:type" content="article">
 <meta property="og:title" content="apache，PHP 本地搭建">
 <meta property="og:url" content="http://fffgroups.com/2015/01/20/PHP/">
 <meta property="og:site_name" content="FFFGroups 成员之一">
-<meta property="og:description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比的安装方式：控制台
-1php -i &gt;a.txt
-
-
-
-1234567891011121314">
+<meta property="og:description" content="1、 apache 没找到放到其他目录的方式，直接丢C盘了2、 php php.ini修改3、 xdebug http://xdebug.org/逗比的安装方式：控制台4、sphinx折腾">
+<meta property="og:image" content="/img/catch.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="apache，PHP 本地搭建">
-<meta name="twitter:description" content="没去找blog，纯手动参照manual搭建注意1、 apache 没找到放到其他目录的方式，直接丢C盘了Apache 2.4.10 Win642、 php php.ini修改extension_dirinclude_path全部都是绝对路径3、 xdebug http://xdebug.org/逗比的安装方式：控制台
-1php -i &gt;a.txt
-
-
-
-1234567891011121314">
+<meta name="twitter:description" content="1、 apache 没找到放到其他目录的方式，直接丢C盘了2、 php php.ini修改3、 xdebug http://xdebug.org/逗比的安装方式：控制台4、sphinx折腾">
 
 
     
@@ -115,13 +101,24 @@
 		
 		</div>
 		
-		<p><h2>没去找blog，纯手动参照manual搭建注意</h2><br>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>Apache 2.4.10 Win64<br>2、 php php.ini修改<br>extension_dir<br>include_path<br>全部都是绝对路径<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a></p>
+		<p>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>2、 php php.ini修改<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a><br>4、sphinx折腾<br><a id="more"></a></p>
+<p><h2>没去找blog，纯手动参照manual搭建注意</h2><br>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>Apache 2.4.10 Win64<br>2、 php php.ini修改<br>extension_dir<br>include_path<br>全部都是绝对路径<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php -i &gt;a.txt</div></pre></td></tr></table></figure>
 
 
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">Tailored Installation Instructions</div><div class="line"></div><div class="line">Summary</div><div class="line"></div><div class="line">Xdebug installed: no</div><div class="line">Server API: Command Line Interface</div><div class="line">Windows: yes - Compiler: MS VC11 - Architecture: x64</div><div class="line">Zend Server: no</div><div class="line">PHP Version: 5.6.4</div><div class="line">Zend API nr: 220131226</div><div class="line">PHP API nr: 20131226</div><div class="line">Debug Build: no</div><div class="line">Thread Safe Build: yes</div><div class="line">Configuration File Path: C:\windows</div><div class="line">Configuration File: D:\GAME\php-5.6.4-Win32-VC11-x64\php.ini</div><div class="line">Extensions directory: D:\GAME\php-5.6.4-Win32-VC11-x64\ext</div><div class="line">Instructions</div><div class="line"></div><div class="line">Download php_xdebug-2.2.6-5.6-vc11-x86_64.dll</div><div class="line">Move the downloaded file to D:\GAME\php-5.6.4-Win32-VC11-x64\ext</div><div class="line">Edit D:\GAME\php-5.6.4-Win32-VC11-x64\php.ini and add the line</div><div class="line">zend_extension = D:\GAME\php-5.6.4-Win32-VC11-x64\ext\php_xdebug-2.2.6-5.6-vc11-x86_64.dll</div></pre></td></tr></table></figure>
 
+<p>4、sphinx折腾<br>sphinx.conf</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># Minimal Sphinx configuration sample (clean, simple, functional)</span></div><div class="line"><span class="comment">#</span></div><div class="line"></div><div class="line">source src1</div><div class="line">{</div><div class="line">    <span class="variable">type            =</span> mysql</div><div class="line"></div><div class="line">    <span class="variable">sql_host        =</span> localhost</div><div class="line">    <span class="variable">sql_user        =</span> wp</div><div class="line">    <span class="variable">sql_pass        =</span> google</div><div class="line">    <span class="variable">sql_db          =</span> sakila</div><div class="line">    <span class="variable">sql_port        =</span> <span class="number">3306</span>  <span class="comment"># optional, default is 3306</span></div><div class="line"></div><div class="line">    <span class="variable">sql_query       =</span> \</div><div class="line">                        SELECT * FROM `rental`</div><div class="line"><span class="comment">#       SELECT id, group_id, UNIX_TIMESTAMP(date_added) AS date_added, title, #content \</span></div><div class="line"><span class="comment">#       FROM actor</span></div><div class="line"></div><div class="line">    <span class="variable">sql_attr_uint       =</span> group_id</div><div class="line">    <span class="variable">sql_attr_timestamp  =</span> date_added</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">index test1</div><div class="line">{</div><div class="line">    <span class="variable">source          =</span> src1</div><div class="line">    <span class="variable">path            =</span> E:\DE\Sphinx\data</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">index testrt</div><div class="line">{</div><div class="line">    <span class="variable">type            =</span> rt</div><div class="line">    <span class="variable">rt_mem_limit        =</span> <span class="number">128</span>M</div><div class="line"></div><div class="line">    <span class="variable">path            =</span> E:\DE\Sphinx\data\rt</div><div class="line"></div><div class="line">    <span class="variable">rt_field        =</span> title</div><div class="line">    <span class="variable">rt_field        =</span> content</div><div class="line">    <span class="variable">rt_attr_uint        =</span> gid</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">indexer</div><div class="line">{</div><div class="line">    <span class="variable">mem_limit       =</span> <span class="number">128</span>M</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">searchd</div><div class="line">{</div><div class="line">    <span class="variable">listen          =</span> <span class="number">9312</span></div><div class="line">    <span class="variable">listen          =</span> <span class="number">9306</span>:mysql41</div><div class="line">    <span class="variable">log         =</span> E:\DE\Sphinx\log\searchd.log</div><div class="line">    <span class="variable">query_log       =</span> E:\DE\Sphinx\log\query.log</div><div class="line">    <span class="variable">read_timeout        =</span> <span class="number">5</span></div><div class="line">    <span class="variable">max_children        =</span> <span class="number">30</span></div><div class="line">    <span class="variable">pid_file        =</span> E:\DE\Sphinx\log\searchd.pid</div><div class="line">    <span class="variable">seamless_rotate     =</span> <span class="number">1</span></div><div class="line">    <span class="variable">preopen_indexes     =</span> <span class="number">1</span></div><div class="line">    <span class="variable">unlink_old      =</span> <span class="number">1</span></div><div class="line">    <span class="variable">workers         =</span> threads <span class="comment"># for RT to work</span></div><div class="line">    <span class="variable">binlog_path     =</span> E:\DE\Sphinx\data</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>查询要用php api</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">D:<span class="command">\GAME</span><span class="command">\php</span>-5.6.4-Win32-VC11-x64&gt;php E:<span class="command">\DE</span><span class="command">\phpMyAdmin</span><span class="command">\api</span><span class="command">\test</span>.php -h 127.0.0.1 -p 9312 2792<span class="special">#</span>查询内容</div></pre></td></tr></table></figure>
+
+<p>对应sql命令</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="operator"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`sakila`</span>.<span class="string">`rental`</span> <span class="keyword">WHERE</span> <span class="string">`inventory_id`</span> = <span class="number">2792</span></span></div></pre></td></tr></table></figure>
+
+<p>截图<br><img src="/img/catch.png" alt="截图"></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -130,7 +127,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/php/">php</a><a href="/tags/apache/">apache</a><a href="/tags/服务器/">服务器</a>
+  <span></span> <a href="/tags/php/">php</a><a href="/tags/apache/">apache</a><a href="/tags/服务器/">服务器</a><a href="/tags/索引/">索引</a><a href="/tags/sphinx/">sphinx</a>
   </div>
 
 </div>
@@ -194,6 +191,14 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
+			<li><a href="/tags/test/" title="test">test<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+		
+			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
+		
 			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
 		
 			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
@@ -206,33 +211,25 @@
 		
 			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
 		
-			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
-		
 			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
-		
-			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
-		
-			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
-		
-			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
-		
-			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
-		
-			<li><a href="/tags/笔记/" title="笔记">笔记<sup>1</sup></a></li>
 		
 			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
 		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
+			<li><a href="/tags/sphinx/" title="sphinx">sphinx<sup>1</sup></a></li>
 		
-			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
-		
-			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+			<li><a href="/tags/索引/" title="索引">索引<sup>1</sup></a></li>
 		
 			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
+		
+			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
 		
 			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
 		
 			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
+		
+			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
+		
+			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
 		
 		</ul>
 </div>
