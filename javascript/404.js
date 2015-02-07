@@ -5,7 +5,7 @@
 //         var jumpTo=document.getElementById("bground2");
 //         jumpTo.innerHTML=secs;
 //     }
-//     function timer(secs){ //每秒更新一次
+//     function timer(secs){ //5秒后显示0，4秒后显示1……1秒后显示5
 //         for (var i=secs;i>0;i--)
 //         {
 //             window.setTimeout('doUpdate('+ i +')', (secs-i) * 1000);
@@ -115,15 +115,15 @@ function delayload() {
 }
 function changeFontColorA() {
     document.getElementById("bground").style.color = "red";//更改文字颜色
-//        document.getElementById("bground2").style.color="red";
-    window.setTimeout(changeFontColorB, 750)
+//  document.getElementById("bground2").style.color="red";
+    window.setTimeout(changeFontColorB, 750);
 }
 function changeFontColorB() {
     document.getElementById("bground").style.color = "yellow";//更改文字颜色
-//        document.getElementById("bground2").style.color="yellow";
-    window.setTimeout(changeFontColorA, 750)
+//  document.getElementById("bground2").style.color="yellow";
+    window.setTimeout(changeFontColorA, 750);
 }
-setTimeout("delayload()", 5000);//5秒后更换背景图片，苦逼的限制真多，参数只能是数字
+setTimeout(delayload, 5000);//5秒后更换背景图片，苦逼的限制真多，参数只能是数字
 //清空计数失败
 // var timeoutHandle=setTimeout("delayload()",5000);
 // setTimeout(function stop(){
