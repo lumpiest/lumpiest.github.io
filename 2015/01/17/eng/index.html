@@ -181,6 +181,34 @@
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
+			<li><a href="/tags/笔记/" title="笔记">笔记<sup>2</sup></a></li>
+		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
+		
+			<li><a href="/tags/主题/" title="主题">主题<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+		
+			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
+		
+			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
+		
+			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
+		
+			<li><a href="/tags/截图/" title="截图">截图<sup>1</sup></a></li>
+		
+			<li><a href="/tags/test/" title="test">test<sup>1</sup></a></li>
+		
+			<li><a href="/tags/snapshot/" title="snapshot">snapshot<sup>1</sup></a></li>
+		
+			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
+		
+			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
+		
+			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
+		
 			<li><a href="/tags/sphinx/" title="sphinx">sphinx<sup>1</sup></a></li>
 		
 			<li><a href="/tags/索引/" title="索引">索引<sup>1</sup></a></li>
@@ -191,35 +219,7 @@
 		
 			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
 		
-			<li><a href="/tags/test/" title="test">test<sup>1</sup></a></li>
-		
-			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
-		
-			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
-		
 			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
-		
-			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
-		
-			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
-		
-			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
-		
-			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
-		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
-		
-			<li><a href="/tags/golang/" title="golang">golang<sup>1</sup></a></li>
-		
-			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
-		
-			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
-		
-			<li><a href="/tags/截图/" title="截图">截图<sup>1</sup></a></li>
-		
-			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-		
-			<li><a href="/tags/snapshot/" title="snapshot">snapshot<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -262,6 +262,10 @@
     </ul>
 </div>
 
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
 </aside>
 </div>
     </div>
@@ -275,7 +279,7 @@
 	
 	<section class="info">
 		<p> Hello ,I&#39;m Jason. <br/>
-			游戏自定义中，欢迎！！</p>
+			人生自定义中，欢迎！！</p>
 	</section>
 	 
 	<div class="social-font" class="clearfix">
@@ -392,13 +396,8 @@ $(document).ready(function(){
       tsina = $this.attr('data-tsina'),
       description = $this.attr('description');
   var html = [
-  '<a href="#" class="overlay" id="qrcode"></a>',
-  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
   '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
   '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
-  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
   '<span title="Share to"></span>'
   ].join('');
   $this.append(html);

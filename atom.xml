@@ -4,7 +4,7 @@
   <subtitle><![CDATA[We get something to do!]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://fffgroups.com/"/>
-  <updated>2015-02-09T03:30:24.831Z</updated>
+  <updated>2015-02-09T13:07:53.832Z</updated>
   <id>http://fffgroups.com/</id>
   
   <author>
@@ -13,6 +13,43 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[自定义Jacman主题]]></title>
+    <link href="http://fffgroups.com/2015/02/09/Custom/"/>
+    <id>http://fffgroups.com/2015/02/09/Custom/</id>
+    <published>2015-02-09T11:49:26.000Z</published>
+    <updated>2015-02-09T13:07:31.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="1-_删除不想要的转发到图标">1. 删除不想要的转发到图标</h3>
+<p>找到文件after_footer.ejs中的这一段，</p>
+<blockquote>
+<p>“E:\html\Hexo\themes\jacman\layout_partial\after_footer.ejs”</p>
+</blockquote>
+<figure class="highlight Markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="vbscript">&lt;% <span class="keyword">if</span> ((page.layout==<span class="comment">'post'||page.layout=='page'||page.layout=='photo')&&!theme.jiathis.enable) { %&gt;</span></span></span></div></pre></td></tr></table></figure>
+
+<p>然后翻到<code>var html = [</code>，一个逗号为一段只留自己想要的，比如我只要FB和TW那么：</p>
+<figure class="highlight Markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var html = [</div><div class="line">'<span class="xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://www.facebook.com/sharer.php?u=' + encodedUrl + '"</span> <span class="attribute">class</span>=<span class="value">"article-share-facebook"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">title</span>=<span class="value">"Facebook"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span>',</div><div class="line">'<span class="xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://twitter.com/intent/tweet?url=' + encodedUrl + '"</span> <span class="attribute">class</span>=<span class="value">"article-share-twitter"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">title</span>=<span class="value">"Twitter"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span>',</div><div class="line">'<span class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">title</span>=<span class="value">"Share to"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span>'</div><div class="line">].join('');</div></pre></td></tr></table></figure>
+
+<p>原始为：(<del>~~中的内容为需要删除的内容~\</del>~)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var <span class="variable">html =</span> [</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"#"</span> <span class="variable">class=</span><span class="string">"overlay"</span> <span class="variable">id=</span><span class="string">"qrcode"</span>&gt;&lt;/a&gt;',~~</div><div class="line">~~'&lt;div <span class="variable">class=</span><span class="string">"qrcode clearfix"</span>&gt;&lt;span&gt;扫描二维码分享到微信朋友圈&lt;/span&gt;&lt;a <span class="variable">class=</span><span class="string">"qrclose"</span> <span class="variable">href=</span><span class="string">"#nothing"</span>&gt;&lt;/a&gt;&lt;strong&gt;Loading...Please wait&lt;/strong&gt;&lt;img <span class="variable">id=</span><span class="string">"qrcode-pic"</span> <span class="variable">data-src=</span><span class="string">"http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"</span>/&gt;&lt;/div&gt;',~~</div><div class="line">'&lt;a <span class="variable">href=</span><span class="string">"https://www.facebook.com/sharer.php?u=' + encodedUrl + '"</span> <span class="variable">class=</span><span class="string">"article-share-facebook"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"Facebook"</span>&gt;&lt;/a&gt;',</div><div class="line">'&lt;a <span class="variable">href=</span><span class="string">"https://twitter.com/intent/tweet?url=' + encodedUrl + '"</span> <span class="variable">class=</span><span class="string">"article-share-twitter"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"Twitter"</span>&gt;&lt;/a&gt;',</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"#qrcode"</span> <span class="variable">class=</span><span class="string">"article-share-qrcode"</span> <span class="variable">title=</span><span class="string">"微信"</span>&gt;&lt;/a&gt;',~~</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'"</span> <span class="variable">class=</span><span class="string">"article-share-renren"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"人人"</span>&gt;&lt;/a&gt;',~~</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'"</span> <span class="variable">class=</span><span class="string">"article-share-weibo"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"微博"</span>&gt;&lt;/a&gt;',~~</div><div class="line">'&lt;span <span class="variable">title=</span><span class="string">"Share to"</span>&gt;&lt;/span&gt;'</div><div class="line">].join(<span class="string">'');</span></div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="1-_删除不想要的转发到图标">1. 删除不想要的转发到图标</h3>
+<p>找到文件after_footer.ejs中的这一段，</p>
+<blockquote>
+<p>“E:\html\Hexo\themes\jacman\layout_partial\aft]]>
+    </summary>
+    
+      <category term="自定义" scheme="http://fffgroups.com/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+    
+      <category term="主题" scheme="http://fffgroups.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="笔记" scheme="http://fffgroups.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="hexo" scheme="http://fffgroups.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[insertpic]]></title>
