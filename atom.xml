@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[FFFGroup 成员之一]]></title>
+  <subtitle><![CDATA[We get something to do!]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://fffgroups.com/"/>
+  <updated>2015-02-09T03:30:24.831Z</updated>
+  <id>http://fffgroups.com/</id>
+  
+  <author>
+    <name><![CDATA[JJ＜(￣︶￣)/]]></name>
+    <email><![CDATA[lumpiest#github.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[insertpic]]></title>
+    <link href="http://fffgroups.com/2015/01/31/insertpic/"/>
+    <id>http://fffgroups.com/2015/01/31/insertpic/</id>
+    <published>2015-01-31T06:34:48.000Z</published>
+    <updated>2015-01-31T06:43:19.000Z</updated>
+    <content type="html"><![CDATA[<p>Github上面有篇issue<br><a href="https://github.com/hexojs/hexo/issues/152" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/152</a><br>提到这样才是正确引用本地图片的方式</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!()[/<span class="keyword">catch</span>.png]</div></pre></td></tr></table></figure>
+
+<p>事实证明不好用啊，结论是要另外建一个img文件夹，hexo\source\img</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![](<span class="regexp">/img/</span><span class="keyword">catch</span>.png)</div></pre></td></tr></table></figure>
+
+<p>唉，那还不如直接用html上</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img <span class="variable">src=</span><span class="string">"/img/catch.png"</span> <span class="variable">alt=</span><span class="string">"截图"</span>&gt;</div></pre></td></tr></table></figure>
+
+<p>两种方式如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img <span class="variable">src=</span><span class="string">"/img/catch.png"</span> <span class="variable">alt=</span><span class="string">"截图"</span>&gt;</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![](<span class="regexp">/img/</span><span class="keyword">catch</span>.png)</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Github上面有篇issue<br><a href="https://github.com/hexojs/hexo/issues/152" target="_blank" rel="external">https://github.com/hexojs/hexo/issu]]>
+    </summary>
+    
+      <category term="pic" scheme="http://fffgroups.com/tags/pic/"/>
+    
+      <category term="snapshot" scheme="http://fffgroups.com/tags/snapshot/"/>
+    
+      <category term="hexo" scheme="http://fffgroups.com/tags/hexo/"/>
+    
+      <category term="截图" scheme="http://fffgroups.com/tags/%E6%88%AA%E5%9B%BE/"/>
+    
+      <category term="图片" scheme="http://fffgroups.com/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="上传" scheme="http://fffgroups.com/tags/%E4%B8%8A%E4%BC%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Go+笔记]]></title>
+    <link href="http://fffgroups.com/2015/01/30/Go/"/>
+    <id>http://fffgroups.com/2015/01/30/Go/</id>
+    <published>2015-01-30T02:27:23.000Z</published>
+    <updated>2015-02-07T12:33:17.000Z</updated>
+    <content type="html"><![CDATA[<p>1、区分大小写<br>2、用到math和math/rand都要导入<br>3、类型在变量名 <em>之后</em>。<br>4、声明，赋值如果不按要求就别写一起<br><a id="more"></a><br>1、区分大小写<br>2、用到math和math/rand都要导入</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"><span class="keyword">import</span> (</span></div><div class="line">    <span class="string">"math"</span></div><div class="line">    <span class="string">"math/rand"</span></div><div class="line">)</div></pre></td></tr></table></figure>
+
+<p>3、类型在变量名 <em>之后</em>。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">func</span> add(x <span class="typename">int</span>, y <span class="typename">int</span>) <span class="typename">int</span> {</div><div class="line">    <span class="keyword">return</span> x + y</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>4、声明，赋值如果不按要求就别写一起</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x <span class="keyword">string</span> = <span class="string">"Hello"</span></div></pre></td></tr></table></figure>
+
+<p>等同于</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">x</span> := <span class="string">"Hello"</span></div></pre></td></tr></table></figure>
+
+<p>和</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x <span class="keyword">string</span></div><div class="line">x = <span class="string">"Hello"</span></div></pre></td></tr></table></figure>
+
+<p>不等于</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x <span class="keyword">string</span> = <span class="string">"Hello"</span></div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1、区分大小写<br>2、用到math和math/rand都要导入<br>3、类型在变量名 <em>之后</em>。<br>4、声明，赋值如果不按要求就别写一起<br>]]>
+    
+    </summary>
+    
+      <category term="golang" scheme="http://fffgroups.com/tags/golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[apache，PHP 本地搭建]]></title>
+    <link href="http://fffgroups.com/2015/01/20/PHP/"/>
+    <id>http://fffgroups.com/2015/01/20/PHP/</id>
+    <published>2015-01-20T12:38:18.000Z</published>
+    <updated>2015-02-07T12:34:40.000Z</updated>
+    <content type="html"><![CDATA[<p>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>2、 php php.ini修改<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a><br>4、sphinx折腾<br><a id="more"></a></p>
+<p><h2>没去找blog，纯手动参照manual搭建注意</h2><br>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>Apache 2.4.10 Win64<br>2、 php php.ini修改<br>extension_dir<br>include_path<br>全部都是绝对路径<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php -i &gt;a.txt</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">Tailored Installation Instructions</div><div class="line"></div><div class="line">Summary</div><div class="line"></div><div class="line">Xdebug installed: no</div><div class="line">Server API: Command Line Interface</div><div class="line">Windows: yes - Compiler: MS VC11 - Architecture: x64</div><div class="line">Zend Server: no</div><div class="line">PHP Version: 5.6.4</div><div class="line">Zend API nr: 220131226</div><div class="line">PHP API nr: 20131226</div><div class="line">Debug Build: no</div><div class="line">Thread Safe Build: yes</div><div class="line">Configuration File Path: C:\windows</div><div class="line">Configuration File: D:\GAME\php-5.6.4-Win32-VC11-x64\php.ini</div><div class="line">Extensions directory: D:\GAME\php-5.6.4-Win32-VC11-x64\ext</div><div class="line">Instructions</div><div class="line"></div><div class="line">Download php_xdebug-2.2.6-5.6-vc11-x86_64.dll</div><div class="line">Move the downloaded file to D:\GAME\php-5.6.4-Win32-VC11-x64\ext</div><div class="line">Edit D:\GAME\php-5.6.4-Win32-VC11-x64\php.ini and add the line</div><div class="line">zend_extension = D:\GAME\php-5.6.4-Win32-VC11-x64\ext\php_xdebug-2.2.6-5.6-vc11-x86_64.dll</div></pre></td></tr></table></figure>
+
+<p>4、sphinx折腾<br>sphinx.conf</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># Minimal Sphinx configuration sample (clean, simple, functional)</span></div><div class="line"><span class="comment">#</span></div><div class="line"></div><div class="line">source src1</div><div class="line">{</div><div class="line">    <span class="variable">type            =</span> mysql</div><div class="line"></div><div class="line">    <span class="variable">sql_host        =</span> localhost</div><div class="line">    <span class="variable">sql_user        =</span> wp</div><div class="line">    <span class="variable">sql_pass        =</span> google</div><div class="line">    <span class="variable">sql_db          =</span> sakila</div><div class="line">    <span class="variable">sql_port        =</span> <span class="number">3306</span>  <span class="comment"># optional, default is 3306</span></div><div class="line"></div><div class="line">    <span class="variable">sql_query       =</span> \</div><div class="line">                        SELECT * FROM `rental`</div><div class="line"><span class="comment">#       SELECT id, group_id, UNIX_TIMESTAMP(date_added) AS date_added, title, #content \</span></div><div class="line"><span class="comment">#       FROM actor</span></div><div class="line"></div><div class="line">    <span class="variable">sql_attr_uint       =</span> group_id</div><div class="line">    <span class="variable">sql_attr_timestamp  =</span> date_added</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">index test1</div><div class="line">{</div><div class="line">    <span class="variable">source          =</span> src1</div><div class="line">    <span class="variable">path            =</span> E:\DE\Sphinx\data</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">index testrt</div><div class="line">{</div><div class="line">    <span class="variable">type            =</span> rt</div><div class="line">    <span class="variable">rt_mem_limit        =</span> <span class="number">128</span>M</div><div class="line"></div><div class="line">    <span class="variable">path            =</span> E:\DE\Sphinx\data\rt</div><div class="line"></div><div class="line">    <span class="variable">rt_field        =</span> title</div><div class="line">    <span class="variable">rt_field        =</span> content</div><div class="line">    <span class="variable">rt_attr_uint        =</span> gid</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">indexer</div><div class="line">{</div><div class="line">    <span class="variable">mem_limit       =</span> <span class="number">128</span>M</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line">searchd</div><div class="line">{</div><div class="line">    <span class="variable">listen          =</span> <span class="number">9312</span></div><div class="line">    <span class="variable">listen          =</span> <span class="number">9306</span>:mysql41</div><div class="line">    <span class="variable">log         =</span> E:\DE\Sphinx\log\searchd.log</div><div class="line">    <span class="variable">query_log       =</span> E:\DE\Sphinx\log\query.log</div><div class="line">    <span class="variable">read_timeout        =</span> <span class="number">5</span></div><div class="line">    <span class="variable">max_children        =</span> <span class="number">30</span></div><div class="line">    <span class="variable">pid_file        =</span> E:\DE\Sphinx\log\searchd.pid</div><div class="line">    <span class="variable">seamless_rotate     =</span> <span class="number">1</span></div><div class="line">    <span class="variable">preopen_indexes     =</span> <span class="number">1</span></div><div class="line">    <span class="variable">unlink_old      =</span> <span class="number">1</span></div><div class="line">    <span class="variable">workers         =</span> threads <span class="comment"># for RT to work</span></div><div class="line">    <span class="variable">binlog_path     =</span> E:\DE\Sphinx\data</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>查询要用php api</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">D:<span class="command">\GAME</span><span class="command">\php</span>-5.6.4-Win32-VC11-x64&gt;php E:<span class="command">\DE</span><span class="command">\phpMyAdmin</span><span class="command">\api</span><span class="command">\test</span>.php -h 127.0.0.1 -p 9312 2792<span class="special">#</span>查询内容</div></pre></td></tr></table></figure>
+
+<p>对应sql命令</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="operator"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`sakila`</span>.<span class="string">`rental`</span> <span class="keyword">WHERE</span> <span class="string">`inventory_id`</span> = <span class="number">2792</span></span></div></pre></td></tr></table></figure>
+
+<p>截图<br><img src="/img/catch.png" alt="截图"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>2、 php php.ini修改<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a><br>4、sphinx折腾<br>]]>
+    
+    </summary>
+    
+      <category term="php" scheme="http://fffgroups.com/tags/php/"/>
+    
+      <category term="apache" scheme="http://fffgroups.com/tags/apache/"/>
+    
+      <category term="服务器" scheme="http://fffgroups.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="索引" scheme="http://fffgroups.com/tags/%E7%B4%A2%E5%BC%95/"/>
+    
+      <category term="sphinx" scheme="http://fffgroups.com/tags/sphinx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JavaScript笔记]]></title>
+    <link href="http://fffgroups.com/2015/01/19/JavaScript/"/>
+    <id>http://fffgroups.com/2015/01/19/JavaScript/</id>
+    <published>2015-01-19T06:22:33.000Z</published>
+    <updated>2015-02-07T12:36:38.000Z</updated>
+    <content type="html"><![CDATA[<p>一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。<br><a id="more"></a><br>1、 <a href="http://www.oschina.net/question/54100_15938" target="_blank" rel="external">http://www.oschina.net/question/54100_15938</a><br>下面有个名为 repeat 的函数，它的参数需要个函数引用和两个数字。第一个数字表示运行的次数，而第二个函数定义运行的间隔时间（毫秒为单位）。下面是相关的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">repeat</span><span class="params">(fn, times, delay)</span> </span>{</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        <span class="keyword">if</span> (times-- &gt; <span class="number">0</span>) {</div><div class="line">            fn.apply(<span class="literal">null</span>, <span class="built_in">arguments</span>);</div><div class="line">            <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</div><div class="line">            <span class="keyword">var</span> self = <span class="built_in">arguments</span>.callee;</div><div class="line">            setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{self.apply(<span class="literal">null</span>,args)}, delay);</div><div class="line">        }</div><div class="line">   };</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>2、等于</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (amount=<span class="number">1000</span>){ <span class="comment">//永远成立 always true</span></div><div class="line">  alert(<span class="string">"It's less the 1000"</span>);</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>=    assignment<br>==   equality<br>===  strict equality<br>if (a == b) { …<br>if (a != b) { …<br>if (a === b) { …<br>if (a !== b) { …<br>if (a &gt; b) { …<br>if (a &lt; b) { …<br>if (a &gt;= b) { …<br>if (a &lt;= b) { …<br>&amp;&amp;<br>||<br>a=a+1 a+=1 a++ ++a 烦人的++—<br>condition ? true : false 三元</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> playerOne = <span class="number">500</span>;</div><div class="line"><span class="keyword">var</span> playerTwo = <span class="number">600</span>;</div><div class="line"><span class="keyword">var</span> highScore;<span class="comment">//等于var highScore=(playerOne&gt;playerTwo)?playerOne:playerTwo;</span></div><div class="line"><span class="keyword">if</span> (playerOne &gt; playerTwo) { </div><div class="line">highScore = playerOne;</div><div class="line">} <span class="keyword">else</span> {</div><div class="line">highScore = playerTwo;</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>setup index -&gt; check condition -&gt; increment</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">1</span> ;i &lt; <span class="number">10</span> ;i++){</div><div class="line"><span class="comment">// do stuff       </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// etc..</span></div><div class="line">}</div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">1</span> ; i &lt; <span class="number">5000</span> ; i++ ) {</div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line">    <span class="keyword">if</span> (i == <span class="number">101</span>) { </div><div class="line">    <span class="keyword">break</span>; <span class="comment">//跳出循环</span></div><div class="line">    }</div><div class="line"><span class="comment">// do stuff</span></div><div class="line">}</div><div class="line"><span class="comment">// break jumps out of the loop</span></div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">1</span> ; i &lt; <span class="number">5000</span> ; i++ ) {</div><div class="line"><span class="comment">// do stuff </span></div><div class="line"><span class="comment">// do stuff </span></div><div class="line">    <span class="keyword">if</span> (i % <span class="number">5</span> == <span class="number">0</span>) { </div><div class="line">    <span class="keyword">continue</span>;<span class="comment">//重新检查for的条件，跳过continue下面的语句</span></div><div class="line">    }</div><div class="line"><span class="comment">// do second set of stuff </span></div><div class="line"><span class="comment">// do second set of stuff</span></div><div class="line">}</div><div class="line"><span class="keyword">var</span> a=<span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> b=<span class="number">20</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span><span class="params">(a,b)</span></span>{</div><div class="line">    <span class="keyword">if</span> (a&gt;b){</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> b;</div><div class="line">}</div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="literal">null</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 undefined Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,),<span class="string">"Logged!"</span>);<span class="comment">//输出 error</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="string">''</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">10</span>,<span class="string">""</span>),<span class="string">"Logged!"</span>);<span class="comment">//输出 10 Logged!</span></div></pre></td></tr></table></figure>
+
+<p>OBJECT CREATION: SHORTHAND</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> playerl ={ name: <span class="string">"Fred"</span>, score: <span class="number">10000</span>, rank: <span class="number">1</span> };</div><div class="line"><span class="keyword">var</span> player2 = { name: <span class="string">"Sam"</span>, score: <span class="number">10000000</span>, rank: <span class="number">5</span> };</div><div class="line"><span class="built_in">console</span>.log(player1.name);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">playerDetails</span><span class="params">()</span> </span>{</div><div class="line"><span class="comment">// display information about each player </span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">" has a rank of: "</span> + <span class="keyword">this</span>.rank + <span class="string">" and a score of "</span> + <span class="keyword">this</span>.score);</div><div class="line">}</div><div class="line">playerl.logDetails = playerDetails;</div><div class="line">player2.logDetails = playerDetails;</div><div class="line">playerl.logDetails();</div><div class="line"></div><div class="line"><span class="keyword">var</span> myListItems=<span class="built_in">document</span>.getElementsByTagName(<span class="string">"td"</span>);</div><div class="line"><span class="comment">//var limitedList=myListItems.getElementsByTagName("a");</span></div><div class="line"><span class="built_in">console</span>.log(limitedList);</div><div class="line"><span class="built_in">console</span>.log(myListItems);</div><div class="line"><span class="comment">//var x = document.getElementById("td").length;//.getElementsByTagName("P")</span></div><div class="line"><span class="built_in">console</span>.log(myListItems.length);</div><div class="line"><span class="comment">//数组array要加[0]复数</span></div><div class="line"><span class="keyword">var</span> myNewElement = <span class="built_in">document</span>.createElement(<span class="string">"li"</span>);</div><div class="line">myNewElement.innerHTML = <span class="string">"New item text"</span>;</div><div class="line"><span class="comment">//myElement.appendChild(myNewElement);</span></div><div class="line"><span class="built_in">document</span>.getElementsByClassName(<span class="string">"box1"</span>)[<span class="number">0</span>].appendChild(myNewElement);</div><div class="line"><span class="comment">//单数</span></div><div class="line"><span class="keyword">var</span> myNewElement = <span class="built_in">document</span>.createElement(<span class="string">"li"</span>);</div><div class="line">myNewElement.innerHTML = <span class="string">"New item text"</span>;</div><div class="line"><span class="comment">//myElement.appendChild(myNewElement);</span></div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"trivia"</span>).appendChild(myNewElement);</div><div class="line"><span class="comment">//盒子</span></div><div class="line"><span class="keyword">var</span> myListItems=<span class="built_in">document</span>.getElementsByClassName(<span class="string">"box1"</span>);</div><div class="line"><span class="keyword">var</span> limitedList=myListItems[<span class="number">0</span>].getElementsByTagName(<span class="string">"a"</span>);</div><div class="line"><span class="comment">//console.log(myListItems);</span></div><div class="line"><span class="built_in">console</span>.log(limitedList);</div><div class="line"><span class="comment">//var x = document.getElementById("td").length;//.getElementsByTagName("P")</span></div><div class="line"><span class="built_in">console</span>.log(limitedList.length);</div><div class="line"><span class="keyword">var</span> x=<span class="built_in">Math</span>.random();<span class="comment">//生成0-1中间的随机数</span></div><div class="line">x=<span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.abs(x)*limitedList.length)<span class="comment">//生成1-limitedList.length（还没有点击的盒子数目）中的随机数</span></div><div class="line"><span class="built_in">console</span>.log(limitedList[x]);</div><div class="line"><span class="keyword">var</span> y= <span class="keyword">new</span> <span class="built_in">String</span>();</div><div class="line">y=limitedList[x];</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(y));<span class="comment">//艹y为什么不是string</span></div><div class="line"><span class="comment">//console.log(y.toString());</span></div><div class="line">y=y.toString();<span class="comment">//转换Object to String</span></div><div class="line"><span class="comment">//y=y.slice(9,-2);//直接看会有多余的HTML标记</span></div><div class="line"><span class="built_in">console</span>.log(y);</div><div class="line">location.replace(y);<span class="comment">//网页重定向</span></div><div class="line"><span class="comment">//收集html信息</span></div><div class="line"><span class="keyword">var</span> getText = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'span'</span>);</div><div class="line"><span class="built_in">console</span>.log(getText[<span class="number">0</span>].innerHTML);</div><div class="line"><span class="comment">/*var y = getText[0];</span></div><div class="line">console.log(typeof (y));</div><div class="line">console.log(y.toString());</div><div class="line">console.log(y.toString.innerHTML());</div><div class="line">console.log(y);*/</div><div class="line"><span class="comment">//首页</span></div><div class="line"><span class="keyword">var</span> inbox6=<span class="built_in">document</span>.getElementsByClassName(<span class="string">"indbox6"</span>);</div><div class="line"><span class="built_in">console</span>.log(inbox6);</div><div class="line">inbox6[<span class="number">1</span>].innerHTML=inbox6[<span class="number">1</span>].innerHTML + <span class="string">'Auto Click!'</span>;</div></pre></td></tr></table></figure>
+
+<p>放弃整体调教苍雪娘了，功力不够，单独页面单独来吧</p>
+<h3 id="part1">part1</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> inbox6 = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'indbox6'</span>);</div><div class="line"><span class="built_in">console</span>.log(inbox6);</div><div class="line">inbox6[<span class="number">1</span>].innerHTML = inbox6[<span class="number">1</span>].innerHTML + <span class="string">'Auto Click!'</span>; <span class="comment">//选用iframe方式，放弃button方式</span></div><div class="line"><span class="comment">//window.inbox6[1].target = 'IFRAME';</span></div><div class="line"><span class="built_in">console</span>.log(inbox6[<span class="number">1</span>].target);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.inbox6[<span class="number">1</span>].target); <span class="comment">//firebug里面查看脚本找到的具体的路径</span></div><div class="line"><span class="keyword">var</span> x = <span class="built_in">document</span>.createElement(<span class="string">'iframe'</span>);</div><div class="line">x.width = <span class="number">295</span>;</div><div class="line">x.height = <span class="number">400</span>;</div><div class="line">x.id=<span class="string">"MyIFrame"</span>;</div><div class="line">x.src=<span class="string">"kf_smbox.php"</span></div><div class="line">x.innerHTML=<span class="string">"http://bbs.2dgal.com/kf_smbox.php"</span></div><div class="line">inbox6[<span class="number">1</span>].appendChild(x);</div><div class="line"><span class="keyword">var</span> getText =<span class="built_in">document</span>.getElementById(<span class="string">"MyIFrame"</span>).contentDocument.getElementsByTagName(<span class="string">"span"</span>);</div><div class="line"><span class="built_in">console</span>.log(getText.innerHTML);</div></pre></td></tr></table></figure>
+
+<h3 id="part2">part2</h3>
+<p><img src="/img/catch2.PNG" alt="源码示例"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> getText = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'span'</span>);</div><div class="line"><span class="built_in">console</span>.log(getText[<span class="number">0</span>].innerHTML);</div></pre></td></tr></table></figure>
+
+<h3 id="part3">part3</h3>
+<p>document.onclick<br>FF认定左右键都算点击<br>Chrome认定只有左键才算</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。<br>]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://fffgroups.com/tags/javascript/"/>
+    
+      <category term="js" scheme="http://fffgroups.com/tags/js/"/>
+    
+      <category term="笔记" scheme="http://fffgroups.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="苍雪" scheme="http://fffgroups.com/tags/%E8%8B%8D%E9%9B%AA/"/>
+    
+      <category term="FireFox" scheme="http://fffgroups.com/tags/FireFox/"/>
+    
+      <category term="Chrome" scheme="http://fffgroups.com/tags/Chrome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[某些可能需要的东西]]></title>
+    <link href="http://fffgroups.com/2015/01/17/eng/"/>
+    <id>http://fffgroups.com/2015/01/17/eng/</id>
+    <published>2015-01-17T03:41:31.000Z</published>
+    <updated>2015-01-30T02:15:44.000Z</updated>
+    <content type="html"><![CDATA[<p><a id="more"></a><br>TO WHOM IT MAY CONCERN,</p>
+<p>FINANCIAL GUARANTEE</p>
+<p>This is a letter of intention to indicate that we have financial capability and we are willing to support my son, Mr.XXXXXX, during his stay in the XXX to (your purpose to go abroad) and whatever he may need financially. Our support will include his living cost and travelling expense to and back from XXX. Best wishes.<br>Sincerely yours,                                XXX’s Father:                                XXX’s Mother:                                Date: </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>]]>
+    
+    </summary>
+    
+      <category term="eng" scheme="http://fffgroups.com/tags/eng/"/>
+    
+      <category term="letter" scheme="http://fffgroups.com/tags/letter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Happy]]></title>
+    <link href="http://fffgroups.com/2015/01/14/Happy/"/>
+    <id>http://fffgroups.com/2015/01/14/Happy/</id>
+    <published>2015-01-14T11:34:43.000Z</published>
+    <updated>2015-02-07T14:44:49.000Z</updated>
+    <content type="html"><![CDATA[<p>示例网页测试<br>1 注意空格<br>2 域名DNS设置<br>3 其他</p>
+<blockquote>
+<p>tags: [css,html] 正确用法<br><a id="more"></a> 隐藏下面<br>layout: false HEXO你不要自作多情<br>参考 <a href="http://yangjian.me/workspace/building-blog-with-hexo/" target="_blank" rel="external">http://yangjian.me/workspace/building-blog-with-hexo/</a><br><a id="more"></a></p>
+<p><html></html></p>
+<p><head><br>    <script type="text/javascript"><br>        document.write(“Hello World!”)<br>        function changestyle(){<br>            document.body.style.backgroundColor=”#ffcc80”;<br>            document.body.style.backgroundImage=”url(<a href="http://pic.nekohand.moe/1/di/H6ZU/H6ZU.png">http://pic.nekohand.moe/1/di/H6ZU/H6ZU.png</a>)”;<br>            document.body.style.backgroundAttachment=”fixed”;<br>            document.body.style.backgroundRepeat=”no-repeat”;<br>            document.body.style.backgroundSize=”cover”;<br>        }<br>    </script><br>    <noscript>Your你应该换浏览器里！</noscript><br>    <style type="text/css"><br>    li strong {<br>    font-style: italic;<br>    font-weight: normal;<br>    }<br>    [title=W3School]<br>    {<br>        border:5px solid blue;<br>    }<br>    .po {border:5px solid red;}<br>    </style><br></head></p>
+<p><body bgcolor="#256582"></body></p>
+<p><input type="button" onclick="changestyle()" value="Set BGimg"><br><a name="tips">Useful Tips Section</a></p>
+<p></p><p>My first pargraph.</p><p></p>
+<p></p><p>my second pra</p><p></p>
+<p></p><p>google</p><p></p>
+<p></p><p>the thied</p><p></p>
+<p><iframe name="baidu" width="auto" height="auto" src="http://www.baigoogledu.com/"><br></iframe></p>
+<p></p><p>=====================================</p><p></p>
+<p><video controls="controls" loop="loop"><br>    <source src="Part 1.flv" type="video/mp4"><br>    nnot sup<br></video></p>
+<p></p><p><sub>【触手猴】动漫名曲钢琴演奏</sub></p><br><abbr title="etcetera">etc.</abbr><br><br><p></p>
+<p><acronym title="World Wide Web">WWW</acronym></p>
+<p></p><p>=====================================</p><p></p>
+<p><h2>Highlight</h2><br></p>
+<pre>$ npm install hexo-renderer-ejs --save
+$ npm install hexo-renderer-stylus --save
+$ npm install hexo-renderer-marked --save</pre>
+
+</blockquote>
+<p><a href="#tips">有用的提示</a></p>
+<p></p><p><a id="baidu" href="#tips" target="baidu">baidu</a></p><br><a href="http://www.baidu.com/" target="_blank" rel="external">This is a Link</a><br><a href="http://www.baidu.com/" target="_blank"><img src="66907303-sakura-temple.jpg" alt="Alternate Text" width="1000" height="400"></a><br><a href="mailto:webmaster@example.com" target="_blank" rel="external">Send e-mail</a>A named anchor:<br><a href="#tips">Jump to the Useful Tips Section</a><p></p>
+<p></p><p></p><p></p>
+<p><pre>we need some tools.<br>    google<br>       google<br></pre></p>
+<p><ol start="100"><br>    <li><br>        <table border="1"><br>            <caption>Test table</caption><br>            <tr><br>                <td>Some text</td><br>                <td>Some text</td><br>            </tr><br>            <tr><br>                <td></td><br>                <td>Some text</td><br>            </tr><br>        </table><br>    </li><br>    <li>google</li><br>    <li>baidu</li><br>    <li><br>        <form name="input" action="test.php" method="get"><br>            i have a bike:<br>            <input type="checkbox" name="vehicle" value="bike" checked="checked"><br>            <br><br>            i have a car:<br>            <input type="checkbox" name="vehicle" value="car"><br>            <br><br>            i have an airplane:<br>            <input type="checkbox" name="vehicle" value="airplane"><br>            <br><br>            <br><br>            <input type="submit" value="Submit"><br>        </form><br>    </li><br>    <li><br>        <div id="navfirst"><br>            <ul id="menu"><br>                <li id="h"><a href="/h.asp" title="html教程">html教程</a></li><br>                <li id="x"><a href="/x.asp" title="XML教程">XML教程</a></li><br>                <li id="b"><a href="/b.asp" title="浏览器脚本">浏览器脚本</a></li><br>                <li id="s"><a href="/s.asp" title="服务器脚本">服务器脚本</a></li><br>                <li id="d"><a href="/d.asp" title="dot net教程">dot net教程</a></li><br>                <li id="m"><a href="/m.asp" title="多媒体教程">多媒体教程</a></li><br>                <li id="w"><a href="/w.asp" title="建站手册">建站手册</a></li><br>            </ul><br>        </div><br>    </li><br>    <li><br>        <p><br>        </p><br>        <ol><br>            <li><strong>我是斜体字。这是因为 strong 元素位于 li 元素内。</strong></li><br>            <li>我是正常的字体。</li><br>        </ol><br>    </li><br></ol><br><strong>我是粗体字，不是斜体字，因为我不在列表当中，所以这个规则对我不起作用</strong></p>
+<p></p><p title="W3School">google</p><p></p>
+<p></p><p class="po">Google</p><p></p>
+<p><script><br>  (function(i,s,o,g,r,a,m){i[‘GoogleAnalyticsObject’]=r;i[r]=i[r]||function(){<br>  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),<br>  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)<br>  })(window,document,’script’,’//www.google-analytics.com/analytics.js’,’ga’);</p>
+<p>  ga(‘create’, ‘UA-58695814-1’, ‘auto’);<br>  ga(‘send’, ‘pageview’);<br></script><br><br></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>示例网页测试<br>1 注意空格<br>2 域名DNS设置<br>3 其他</p>
+<blockquote>
+<p>tags: [css,html] 正确用法<br><!--more--> 隐藏下面<br>layout: false HEXO你不要自作多情<br>参考 <a href="http://yangjian.me/workspace/building-blog-with-hexo/" target="_blank" rel="external">http://yangjian.me/workspace/building-blog-with-hexo/</a><br>]]>
+    
+    </summary>
+    
+      <category term="css" scheme="http://fffgroups.com/tags/css/"/>
+    
+      <category term="html" scheme="http://fffgroups.com/tags/html/"/>
+    
+      <category term="test" scheme="http://fffgroups.com/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://fffgroups.com/2015/01/14/hello-world/"/>
+    <id>http://fffgroups.com/2015/01/14/hello-world/</id>
+    <published>2015-01-14T03:38:38.000Z</published>
+    <updated>2015-02-09T03:11:08.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br>作为历史的见证，就不删了<br><a id="more"></a></p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="公式">公式</h2>
+<p>$$J_\alpha(x)=\sum _{m=0}^\infty \frac{(-1)^ m}{m! \, \Gamma (m + \alpha + 1)}{\left({\frac{x}{2}}\right)}^{2 m + \alpha }$$</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br>作为历史的见证，就不删了<br>]]>
+    
+    </summary>
+    
+  </entry>
+  
+</feed>
