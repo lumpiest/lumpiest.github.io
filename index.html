@@ -169,9 +169,24 @@
 <p>然后翻到<code>var html = [</code>，一个逗号为一段只留自己想要的，比如我只要FB和TW那么：</p>
 <figure class="highlight Markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var html = [</div><div class="line">'<span class="xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://www.facebook.com/sharer.php?u=' + encodedUrl + '"</span> <span class="attribute">class</span>=<span class="value">"article-share-facebook"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">title</span>=<span class="value">"Facebook"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span>',</div><div class="line">'<span class="xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://twitter.com/intent/tweet?url=' + encodedUrl + '"</span> <span class="attribute">class</span>=<span class="value">"article-share-twitter"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">title</span>=<span class="value">"Twitter"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span>',</div><div class="line">'<span class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">title</span>=<span class="value">"Share to"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span>'</div><div class="line">].join('');</div></pre></td></tr></table></figure>
 
-<p>原始为：(<del>~~中的内容为需要删除的内容~\</del>~)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var <span class="variable">html =</span> [</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"#"</span> <span class="variable">class=</span><span class="string">"overlay"</span> <span class="variable">id=</span><span class="string">"qrcode"</span>&gt;&lt;/a&gt;',~~</div><div class="line">~~'&lt;div <span class="variable">class=</span><span class="string">"qrcode clearfix"</span>&gt;&lt;span&gt;扫描二维码分享到微信朋友圈&lt;/span&gt;&lt;a <span class="variable">class=</span><span class="string">"qrclose"</span> <span class="variable">href=</span><span class="string">"#nothing"</span>&gt;&lt;/a&gt;&lt;strong&gt;Loading...Please wait&lt;/strong&gt;&lt;img <span class="variable">id=</span><span class="string">"qrcode-pic"</span> <span class="variable">data-src=</span><span class="string">"http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"</span>/&gt;&lt;/div&gt;',~~</div><div class="line">'&lt;a <span class="variable">href=</span><span class="string">"https://www.facebook.com/sharer.php?u=' + encodedUrl + '"</span> <span class="variable">class=</span><span class="string">"article-share-facebook"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"Facebook"</span>&gt;&lt;/a&gt;',</div><div class="line">'&lt;a <span class="variable">href=</span><span class="string">"https://twitter.com/intent/tweet?url=' + encodedUrl + '"</span> <span class="variable">class=</span><span class="string">"article-share-twitter"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"Twitter"</span>&gt;&lt;/a&gt;',</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"#qrcode"</span> <span class="variable">class=</span><span class="string">"article-share-qrcode"</span> <span class="variable">title=</span><span class="string">"微信"</span>&gt;&lt;/a&gt;',~~</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'"</span> <span class="variable">class=</span><span class="string">"article-share-renren"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"人人"</span>&gt;&lt;/a&gt;',~~</div><div class="line">~~'&lt;a <span class="variable">href=</span><span class="string">"http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'"</span> <span class="variable">class=</span><span class="string">"article-share-weibo"</span> <span class="variable">target=</span><span class="string">"_blank"</span> <span class="variable">title=</span><span class="string">"微博"</span>&gt;&lt;/a&gt;',~~</div><div class="line">'&lt;span <span class="variable">title=</span><span class="string">"Share to"</span>&gt;&lt;/span&gt;'</div><div class="line">].join(<span class="string">'');</span></div></pre></td></tr></table></figure>
+<p>原始为：(<del>&sim;&sim;中的内容为需要删除的内容&sim;&sim;</del>)</p>
+<pre>
+var html = [
+<del>'&lt;a href="#" class="overlay" id="qrcode">&lt;/a>',</del>
+<del>'&lt;div class="qrcode clearfix">&lt;span>扫描二维码分享到微信朋友圈&lt;/span>&lt;a class="qrclose" href="#nothing">&lt;/a>&lt;strong>Loading...Please wait&lt;/strong>&lt;img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/>&lt;/div>',</del>
+'&lt;a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook">&lt;/a>',
+'&lt;a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter">&lt;/a>',
+<del>'&lt;a href="#qrcode" class="article-share-qrcode" title="微信">&lt;/a>',</del>
+<del>'&lt;a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人">&lt;/a>',</del>
+<del>'&lt;a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博">&lt;/a>',</del>
+'&lt;span title="Share to">&lt;/span>'
+].join('');
+</pre>
 
+<blockquote>
+<p>PS:<br>特殊字符自动转换<br>在 HTML 文件中，有两个字符需要特殊处理： &lt; 和 &amp; 。 &lt; 符号用于起始标签，&amp; 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。<br>删除可以用<code>&lt;del&gt;&lt;/del&gt;</code>也可以用<code>&lt;s&gt;&lt;/s&gt;</code>，但<code>~~</code>失败。<br>码表~=<code>&amp;sim;</code>,&lt;=<code>&amp;lt;</code>.</p>
+</blockquote>
+<p><strong>于是上面的代码块要这样写</strong><br><img src="/img/2015-02-13_21-59-33.png" alt="截图"></p>
 
         
         
@@ -653,41 +668,41 @@
 		
 			<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
 		
-			<li><a href="/tags/自动上传/" title="自动上传">自动上传<sup>1</sup></a></li>
-		
-			<li><a href="/tags/email/" title="email">email<sup>1</sup></a></li>
-		
-			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
+			<li><a href="/tags/主题/" title="主题">主题<sup>1</sup></a></li>
 		
 			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
 		
 			<li><a href="/tags/截图/" title="截图">截图<sup>1</sup></a></li>
 		
+			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
+		
 			<li><a href="/tags/snapshot/" title="snapshot">snapshot<sup>1</sup></a></li>
 		
 			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
+		
+			<li><a href="/tags/自动上传/" title="自动上传">自动上传<sup>1</sup></a></li>
+		
+			<li><a href="/tags/图床/" title="图床">图床<sup>1</sup></a></li>
+		
+			<li><a href="/tags/imgur/" title="imgur">imgur<sup>1</sup></a></li>
+		
+			<li><a href="/tags/email/" title="email">email<sup>1</sup></a></li>
 		
 			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
 		
 			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
 		
-			<li><a href="/tags/sphinx/" title="sphinx">sphinx<sup>1</sup></a></li>
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
 		
 			<li><a href="/tags/索引/" title="索引">索引<sup>1</sup></a></li>
 		
 			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
 		
-			<li><a href="/tags/主题/" title="主题">主题<sup>1</sup></a></li>
+			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
 		
 			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
 		
 			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
-		
-			<li><a href="/tags/FireFox/" title="FireFox">FireFox<sup>1</sup></a></li>
-		
-			<li><a href="/tags/苍雪/" title="苍雪">苍雪<sup>1</sup></a></li>
-		
-			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
 		
 		</ul>
 </div>
