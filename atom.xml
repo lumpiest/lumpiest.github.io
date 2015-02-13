@@ -3,9 +3,9 @@
   <title><![CDATA[FFFGroups 成员之一]]></title>
   <subtitle><![CDATA[We get something to do!]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://fffgroups.com/"/>
-  <updated>2015-02-13T14:07:02.777Z</updated>
-  <id>http://fffgroups.com/</id>
+  <link href="http://blog.fffgroups.com/"/>
+  <updated>2015-02-13T15:02:03.132Z</updated>
+  <id>http://blog.fffgroups.com/</id>
   
   <author>
     <name><![CDATA[JJ＜(￣︶￣)/]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[imgur]]></title>
-    <link href="http://fffgroups.com/2015/02/13/imgur/"/>
-    <id>http://fffgroups.com/2015/02/13/imgur/</id>
+    <link href="http://blog.fffgroups.com/2015/02/13/imgur/"/>
+    <id>http://blog.fffgroups.com/2015/02/13/imgur/</id>
     <published>2015-02-13T08:31:10.000Z</published>
     <updated>2015-02-13T08:35:26.000Z</updated>
     <content type="html"><![CDATA[<h1 id="研究css无果">研究css无果</h1>
@@ -43,20 +43,20 @@
     
     </summary>
     
-      <category term="email" scheme="http://fffgroups.com/tags/email/"/>
+      <category term="email" scheme="http://blog.fffgroups.com/tags/email/"/>
     
-      <category term="imgur" scheme="http://fffgroups.com/tags/imgur/"/>
+      <category term="imgur" scheme="http://blog.fffgroups.com/tags/imgur/"/>
     
-      <category term="图床" scheme="http://fffgroups.com/tags/%E5%9B%BE%E5%BA%8A/"/>
+      <category term="图床" scheme="http://blog.fffgroups.com/tags/%E5%9B%BE%E5%BA%8A/"/>
     
-      <category term="自动上传" scheme="http://fffgroups.com/tags/%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0/"/>
+      <category term="自动上传" scheme="http://blog.fffgroups.com/tags/%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[自定义Jacman主题]]></title>
-    <link href="http://fffgroups.com/2015/02/09/Custom/"/>
-    <id>http://fffgroups.com/2015/02/09/Custom/</id>
+    <link href="http://blog.fffgroups.com/2015/02/09/Custom/"/>
+    <id>http://blog.fffgroups.com/2015/02/09/Custom/</id>
     <published>2015-02-09T11:49:26.000Z</published>
     <updated>2015-02-13T14:06:47.000Z</updated>
     <content type="html"><![CDATA[<h3 id="1-_删除不想要的转发到图标">1. 删除不想要的转发到图标</h3>
@@ -95,20 +95,20 @@ var html = [
 <p>“E:\html\Hexo\themes\jacman\layout_partial\aft]]>
     </summary>
     
-      <category term="自定义" scheme="http://fffgroups.com/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+      <category term="自定义" scheme="http://blog.fffgroups.com/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
     
-      <category term="主题" scheme="http://fffgroups.com/tags/%E4%B8%BB%E9%A2%98/"/>
+      <category term="主题" scheme="http://blog.fffgroups.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="笔记" scheme="http://fffgroups.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="http://blog.fffgroups.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="hexo" scheme="http://fffgroups.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://blog.fffgroups.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[insertpic]]></title>
-    <link href="http://fffgroups.com/2015/01/31/insertpic/"/>
-    <id>http://fffgroups.com/2015/01/31/insertpic/</id>
+    <link href="http://blog.fffgroups.com/2015/01/31/insertpic/"/>
+    <id>http://blog.fffgroups.com/2015/01/31/insertpic/</id>
     <published>2015-01-31T06:34:48.000Z</published>
     <updated>2015-01-31T06:43:19.000Z</updated>
     <content type="html"><![CDATA[<p>Github上面有篇issue<br><a href="https://github.com/hexojs/hexo/issues/152" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/152</a><br>提到这样才是正确引用本地图片的方式</p>
@@ -132,24 +132,24 @@ var html = [
     <![CDATA[<p>Github上面有篇issue<br><a href="https://github.com/hexojs/hexo/issues/152" target="_blank" rel="external">https://github.com/hexojs/hexo/issu]]>
     </summary>
     
-      <category term="pic" scheme="http://fffgroups.com/tags/pic/"/>
+      <category term="pic" scheme="http://blog.fffgroups.com/tags/pic/"/>
     
-      <category term="snapshot" scheme="http://fffgroups.com/tags/snapshot/"/>
+      <category term="snapshot" scheme="http://blog.fffgroups.com/tags/snapshot/"/>
     
-      <category term="hexo" scheme="http://fffgroups.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://blog.fffgroups.com/tags/hexo/"/>
     
-      <category term="截图" scheme="http://fffgroups.com/tags/%E6%88%AA%E5%9B%BE/"/>
+      <category term="截图" scheme="http://blog.fffgroups.com/tags/%E6%88%AA%E5%9B%BE/"/>
     
-      <category term="图片" scheme="http://fffgroups.com/tags/%E5%9B%BE%E7%89%87/"/>
+      <category term="图片" scheme="http://blog.fffgroups.com/tags/%E5%9B%BE%E7%89%87/"/>
     
-      <category term="上传" scheme="http://fffgroups.com/tags/%E4%B8%8A%E4%BC%A0/"/>
+      <category term="上传" scheme="http://blog.fffgroups.com/tags/%E4%B8%8A%E4%BC%A0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Go+笔记]]></title>
-    <link href="http://fffgroups.com/2015/01/30/Go/"/>
-    <id>http://fffgroups.com/2015/01/30/Go/</id>
+    <link href="http://blog.fffgroups.com/2015/01/30/Go/"/>
+    <id>http://blog.fffgroups.com/2015/01/30/Go/</id>
     <published>2015-01-30T02:27:23.000Z</published>
     <updated>2015-02-07T12:33:17.000Z</updated>
     <content type="html"><![CDATA[<p>1、区分大小写<br>2、用到math和math/rand都要导入<br>3、类型在变量名 <em>之后</em>。<br>4、声明，赋值如果不按要求就别写一起<br><a id="more"></a><br>1、区分大小写<br>2、用到math和math/rand都要导入</p>
@@ -176,14 +176,14 @@ var html = [
     
     </summary>
     
-      <category term="golang" scheme="http://fffgroups.com/tags/golang/"/>
+      <category term="golang" scheme="http://blog.fffgroups.com/tags/golang/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[apache，PHP 本地搭建]]></title>
-    <link href="http://fffgroups.com/2015/01/20/PHP/"/>
-    <id>http://fffgroups.com/2015/01/20/PHP/</id>
+    <link href="http://blog.fffgroups.com/2015/01/20/PHP/"/>
+    <id>http://blog.fffgroups.com/2015/01/20/PHP/</id>
     <published>2015-01-20T12:38:18.000Z</published>
     <updated>2015-02-07T12:34:40.000Z</updated>
     <content type="html"><![CDATA[<p>1、 apache 没找到放到其他目录的方式，直接丢C盘了<br>2、 php php.ini修改<br>3、 xdebug <a href="http://xdebug.org/逗比的安装方式：控制台" target="_blank" rel="external">http://xdebug.org/逗比的安装方式：控制台</a><br>4、sphinx折腾<br><a id="more"></a></p>
@@ -210,22 +210,22 @@ var html = [
     
     </summary>
     
-      <category term="php" scheme="http://fffgroups.com/tags/php/"/>
+      <category term="php" scheme="http://blog.fffgroups.com/tags/php/"/>
     
-      <category term="apache" scheme="http://fffgroups.com/tags/apache/"/>
+      <category term="apache" scheme="http://blog.fffgroups.com/tags/apache/"/>
     
-      <category term="服务器" scheme="http://fffgroups.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="服务器" scheme="http://blog.fffgroups.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="索引" scheme="http://fffgroups.com/tags/%E7%B4%A2%E5%BC%95/"/>
+      <category term="索引" scheme="http://blog.fffgroups.com/tags/%E7%B4%A2%E5%BC%95/"/>
     
-      <category term="sphinx" scheme="http://fffgroups.com/tags/sphinx/"/>
+      <category term="sphinx" scheme="http://blog.fffgroups.com/tags/sphinx/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[JavaScript笔记]]></title>
-    <link href="http://fffgroups.com/2015/01/19/JavaScript/"/>
-    <id>http://fffgroups.com/2015/01/19/JavaScript/</id>
+    <link href="http://blog.fffgroups.com/2015/01/19/JavaScript/"/>
+    <id>http://blog.fffgroups.com/2015/01/19/JavaScript/</id>
     <published>2015-01-19T06:22:33.000Z</published>
     <updated>2015-02-13T13:27:33.000Z</updated>
     <content type="html"><![CDATA[<p>一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。<br><a id="more"></a></p>
@@ -268,24 +268,24 @@ var html = [
     
     </summary>
     
-      <category term="javascript" scheme="http://fffgroups.com/tags/javascript/"/>
+      <category term="javascript" scheme="http://blog.fffgroups.com/tags/javascript/"/>
     
-      <category term="js" scheme="http://fffgroups.com/tags/js/"/>
+      <category term="js" scheme="http://blog.fffgroups.com/tags/js/"/>
     
-      <category term="笔记" scheme="http://fffgroups.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="http://blog.fffgroups.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="苍雪" scheme="http://fffgroups.com/tags/%E8%8B%8D%E9%9B%AA/"/>
+      <category term="苍雪" scheme="http://blog.fffgroups.com/tags/%E8%8B%8D%E9%9B%AA/"/>
     
-      <category term="FireFox" scheme="http://fffgroups.com/tags/FireFox/"/>
+      <category term="FireFox" scheme="http://blog.fffgroups.com/tags/FireFox/"/>
     
-      <category term="Chrome" scheme="http://fffgroups.com/tags/Chrome/"/>
+      <category term="Chrome" scheme="http://blog.fffgroups.com/tags/Chrome/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[某些可能需要的东西]]></title>
-    <link href="http://fffgroups.com/2015/01/17/eng/"/>
-    <id>http://fffgroups.com/2015/01/17/eng/</id>
+    <link href="http://blog.fffgroups.com/2015/01/17/eng/"/>
+    <id>http://blog.fffgroups.com/2015/01/17/eng/</id>
     <published>2015-01-17T03:41:31.000Z</published>
     <updated>2015-01-30T02:15:44.000Z</updated>
     <content type="html"><![CDATA[<p><a id="more"></a><br>TO WHOM IT MAY CONCERN,</p>
@@ -297,16 +297,16 @@ var html = [
     
     </summary>
     
-      <category term="eng" scheme="http://fffgroups.com/tags/eng/"/>
+      <category term="eng" scheme="http://blog.fffgroups.com/tags/eng/"/>
     
-      <category term="letter" scheme="http://fffgroups.com/tags/letter/"/>
+      <category term="letter" scheme="http://blog.fffgroups.com/tags/letter/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Happy]]></title>
-    <link href="http://fffgroups.com/2015/01/14/Happy/"/>
-    <id>http://fffgroups.com/2015/01/14/Happy/</id>
+    <link href="http://blog.fffgroups.com/2015/01/14/Happy/"/>
+    <id>http://blog.fffgroups.com/2015/01/14/Happy/</id>
     <published>2015-01-14T11:34:43.000Z</published>
     <updated>2015-02-07T14:44:49.000Z</updated>
     <content type="html"><![CDATA[<p>示例网页测试<br>1 注意空格<br>2 域名DNS设置<br>3 其他</p>
@@ -349,18 +349,18 @@ $ npm install hexo-renderer-marked --save</pre>
     
     </summary>
     
-      <category term="css" scheme="http://fffgroups.com/tags/css/"/>
+      <category term="css" scheme="http://blog.fffgroups.com/tags/css/"/>
     
-      <category term="html" scheme="http://fffgroups.com/tags/html/"/>
+      <category term="html" scheme="http://blog.fffgroups.com/tags/html/"/>
     
-      <category term="test" scheme="http://fffgroups.com/tags/test/"/>
+      <category term="test" scheme="http://blog.fffgroups.com/tags/test/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://fffgroups.com/2015/01/14/hello-world/"/>
-    <id>http://fffgroups.com/2015/01/14/hello-world/</id>
+    <link href="http://blog.fffgroups.com/2015/01/14/hello-world/"/>
+    <id>http://blog.fffgroups.com/2015/01/14/hello-world/</id>
     <published>2015-01-14T03:38:38.000Z</published>
     <updated>2015-02-09T03:11:08.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br>作为历史的见证，就不删了<br><a id="more"></a></p>
