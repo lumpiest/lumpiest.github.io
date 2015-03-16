@@ -97,7 +97,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#repeat_的函数"><span class="toc-number">1.</span> <span class="toc-text">repeat 的函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等于"><span class="toc-number">2.</span> <span class="toc-text">等于</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#想去修改KF首页挂个点击的脚本，想了想不会做"><span class="toc-number">3.</span> <span class="toc-text">想去修改KF首页挂个点击的脚本，想了想不会做</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#放弃整体调教苍雪娘了，功力不够，单独页面单独来吧"><span class="toc-number">4.</span> <span class="toc-text">放弃整体调教苍雪娘了，功力不够，单独页面单独来吧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#part1"><span class="toc-number">4.1.</span> <span class="toc-text">part1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part2"><span class="toc-number">4.2.</span> <span class="toc-text">part2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part3"><span class="toc-number">4.3.</span> <span class="toc-text">part3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#document-onclick"><span class="toc-number">5.</span> <span class="toc-text">document.onclick</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#repeat_的函数"><span class="toc-number">1.</span> <span class="toc-text">repeat 的函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等于"><span class="toc-number">2.</span> <span class="toc-text">等于</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#想去修改KF首页挂个点击的脚本，想了想不会做"><span class="toc-number">3.</span> <span class="toc-text">想去修改KF首页挂个点击的脚本，想了想不会做</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#放弃整体调教苍雪娘了，功力不够，单独页面单独来吧"><span class="toc-number">4.</span> <span class="toc-text">放弃整体调教苍雪娘了，功力不够，单独页面单独来吧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#part1"><span class="toc-number">4.1.</span> <span class="toc-text">part1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part2"><span class="toc-number">4.2.</span> <span class="toc-text">part2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part3"><span class="toc-number">4.3.</span> <span class="toc-text">part3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#document-onclick"><span class="toc-number">5.</span> <span class="toc-text">document.onclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论:"><span class="toc-number">6.</span> <span class="toc-text">结论:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#KF自动点击"><span class="toc-number">6.1.</span> <span class="toc-text">KF自动点击</span></a></li></ol></li></ol>
 		
 		</div>
 		
@@ -135,6 +135,11 @@
 <h3 id="part3">part3</h3>
 <h2 id="document-onclick">document.onclick</h2>
 <p>FF认定左右键都算点击<br>Chrome认定只有左键才算</p>
+<h2 id="结论:">结论:</h2>
+<h3 id="KF自动点击">KF自动点击</h3>
+<p><a href="https://greasyfork.org/en/scripts/7844-kf-box-auto-click" target="_blank" rel="external">https://greasyfork.org/en/scripts/7844-kf-box-auto-click</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// ==UserScript==</span></div><div class="line"><span class="comment">// @name        kf auto click box</span></div><div class="line"><span class="comment">// @namespace   name space</span></div><div class="line"><span class="comment">// @description kf 自动点击盒子</span></div><div class="line"><span class="comment">// @include     http://bbs.2dgal.com/kf_smbox.php</span></div><div class="line"><span class="comment">// @version     1</span></div><div class="line"><span class="comment">// @grant       none</span></div><div class="line"><span class="comment">// ==/UserScript==</span></div><div class="line"><span class="keyword">var</span> myListItems = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'box1'</span>);</div><div class="line"><span class="keyword">var</span> limitedList = myListItems[<span class="number">0</span>].getElementsByTagName(<span class="string">'a'</span>);</div><div class="line"><span class="comment">//console.log(myListItems);</span></div><div class="line"><span class="built_in">console</span>.log(limitedList);</div><div class="line"><span class="comment">//var x = document.getElementById("td").length;//.getElementsByTagName("P")</span></div><div class="line"><span class="built_in">console</span>.log(limitedList.length);</div><div class="line"><span class="keyword">var</span> x = <span class="built_in">Math</span>.random(); <span class="comment">//生成0-1中间的随机数</span></div><div class="line">x = <span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.abs(x) * limitedList.length) <span class="comment">//生成1-limitedList.length（还没有点击的盒子数目）中的随机数</span></div><div class="line"><span class="built_in">console</span>.log(limitedList[x]);</div><div class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>();</div><div class="line">y = limitedList[x];</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> (y)); <span class="comment">//艹y为什么不是string</span></div><div class="line"><span class="comment">//console.log(y.toString());</span></div><div class="line">y = y.toString(); <span class="comment">//转换Object to String</span></div><div class="line"><span class="comment">//y=y.slice(9,-2);//直接看会有多余的HTML标记</span></div><div class="line"><span class="built_in">console</span>.log(y);</div><div class="line">location.replace(y); <span class="comment">//网页重定向</span></div></pre></td></tr></table></figure>
+
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -175,7 +180,7 @@
 
 
 <div class="next">
-<a href="/2015/01/17/eng/"  title="某些可能需要的东西">
+<a href="/2015/01/17/Golang/"  title="某些可能需要的东西">
  <strong>下一篇：</strong><br/> 
  <span>某些可能需要的东西
 </span>
@@ -198,7 +203,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#repeat_的函数"><span class="toc-number">1.</span> <span class="toc-text">repeat 的函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等于"><span class="toc-number">2.</span> <span class="toc-text">等于</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#想去修改KF首页挂个点击的脚本，想了想不会做"><span class="toc-number">3.</span> <span class="toc-text">想去修改KF首页挂个点击的脚本，想了想不会做</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#放弃整体调教苍雪娘了，功力不够，单独页面单独来吧"><span class="toc-number">4.</span> <span class="toc-text">放弃整体调教苍雪娘了，功力不够，单独页面单独来吧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#part1"><span class="toc-number">4.1.</span> <span class="toc-text">part1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part2"><span class="toc-number">4.2.</span> <span class="toc-text">part2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part3"><span class="toc-number">4.3.</span> <span class="toc-text">part3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#document-onclick"><span class="toc-number">5.</span> <span class="toc-text">document.onclick</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#repeat_的函数"><span class="toc-number">1.</span> <span class="toc-text">repeat 的函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等于"><span class="toc-number">2.</span> <span class="toc-text">等于</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#想去修改KF首页挂个点击的脚本，想了想不会做"><span class="toc-number">3.</span> <span class="toc-text">想去修改KF首页挂个点击的脚本，想了想不会做</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#放弃整体调教苍雪娘了，功力不够，单独页面单独来吧"><span class="toc-number">4.</span> <span class="toc-text">放弃整体调教苍雪娘了，功力不够，单独页面单独来吧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#part1"><span class="toc-number">4.1.</span> <span class="toc-text">part1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part2"><span class="toc-number">4.2.</span> <span class="toc-text">part2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#part3"><span class="toc-number">4.3.</span> <span class="toc-text">part3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#document-onclick"><span class="toc-number">5.</span> <span class="toc-text">document.onclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论:"><span class="toc-number">6.</span> <span class="toc-text">结论:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#KF自动点击"><span class="toc-number">6.1.</span> <span class="toc-text">KF自动点击</span></a></li></ol></li></ol>
  
   </div>
 
@@ -217,13 +222,7 @@
 		
 			<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
 		
-			<li><a href="/tags/Chrome/" title="Chrome">Chrome<sup>1</sup></a></li>
-		
-			<li><a href="/tags/js/" title="js">js<sup>1</sup></a></li>
-		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
-		
-			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
+			<li><a href="/tags/letter/" title="letter">letter<sup>1</sup></a></li>
 		
 			<li><a href="/tags/图片/" title="图片">图片<sup>1</sup></a></li>
 		
@@ -233,6 +232,12 @@
 		
 			<li><a href="/tags/pic/" title="pic">pic<sup>1</sup></a></li>
 		
+			<li><a href="/tags/test/" title="test">test<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+		
 			<li><a href="/tags/自动上传/" title="自动上传">自动上传<sup>1</sup></a></li>
 		
 			<li><a href="/tags/图床/" title="图床">图床<sup>1</sup></a></li>
@@ -241,17 +246,17 @@
 		
 			<li><a href="/tags/email/" title="email">email<sup>1</sup></a></li>
 		
+			<li><a href="/tags/上传/" title="上传">上传<sup>1</sup></a></li>
+		
 			<li><a href="/tags/主题/" title="主题">主题<sup>1</sup></a></li>
 		
-			<li><a href="/tags/eng/" title="eng">eng<sup>1</sup></a></li>
+			<li><a href="/tags/自定义/" title="自定义">自定义<sup>1</sup></a></li>
+		
+			<li><a href="/tags/心情/" title="心情">心情<sup>1</sup></a></li>
 		
 			<li><a href="/tags/sphinx/" title="sphinx">sphinx<sup>1</sup></a></li>
 		
 			<li><a href="/tags/索引/" title="索引">索引<sup>1</sup></a></li>
-		
-			<li><a href="/tags/服务器/" title="服务器">服务器<sup>1</sup></a></li>
-		
-			<li><a href="/tags/apache/" title="apache">apache<sup>1</sup></a></li>
 		
 		</ul>
 </div>

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[We get something to be done before XXOO!]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.fffgroups.com/"/>
-  <updated>2015-02-15T03:05:41.933Z</updated>
+  <updated>2015-03-16T12:51:12.967Z</updated>
   <id>http://blog.fffgroups.com/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[10年之前的年味]]></title>
+    <link href="http://blog.fffgroups.com/2015/02/18/year/"/>
+    <id>http://blog.fffgroups.com/2015/02/18/year/</id>
+    <published>2015-02-18T10:43:27.000Z</published>
+    <updated>2015-02-18T10:49:57.000Z</updated>
+    <content type="html"><![CDATA[<p>多少年前，过年还是很欢乐的事情，现在……<br><a id="more"></a></p>
+<h1 id="小时候盼过年——几个伙伴在一起愉快的玩耍">小时候盼过年——几个伙伴在一起愉快的玩耍</h1>
+<h1 id="工作后的第一个新年——离职">工作后的第一个新年——离职</h1>
+<h1 id="OVER">OVER</h1>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>多少年前，过年还是很欢乐的事情，现在……<br>]]>
+    
+    </summary>
+    
+      <category term="新年" scheme="http://blog.fffgroups.com/tags/%E6%96%B0%E5%B9%B4/"/>
+    
+      <category term="心情" scheme="http://blog.fffgroups.com/tags/%E5%BF%83%E6%83%85/"/>
+    
+      <category term="回忆" scheme="http://blog.fffgroups.com/tags/%E5%9B%9E%E5%BF%86/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[imgur]]></title>
@@ -227,7 +251,7 @@ var html = [
     <link href="http://blog.fffgroups.com/2015/01/19/JavaScript/"/>
     <id>http://blog.fffgroups.com/2015/01/19/JavaScript/</id>
     <published>2015-01-19T06:22:33.000Z</published>
-    <updated>2015-02-13T13:27:33.000Z</updated>
+    <updated>2015-03-15T05:22:39.000Z</updated>
     <content type="html"><![CDATA[<p>一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。<br><a id="more"></a></p>
 <h2 id="repeat_的函数">repeat 的函数</h2>
 <ol>
@@ -262,6 +286,11 @@ var html = [
 <h3 id="part3">part3</h3>
 <h2 id="document-onclick">document.onclick</h2>
 <p>FF认定左右键都算点击<br>Chrome认定只有左键才算</p>
+<h2 id="结论:">结论:</h2>
+<h3 id="KF自动点击">KF自动点击</h3>
+<p><a href="https://greasyfork.org/en/scripts/7844-kf-box-auto-click" target="_blank" rel="external">https://greasyfork.org/en/scripts/7844-kf-box-auto-click</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// ==UserScript==</span></div><div class="line"><span class="comment">// @name        kf auto click box</span></div><div class="line"><span class="comment">// @namespace   name space</span></div><div class="line"><span class="comment">// @description kf 自动点击盒子</span></div><div class="line"><span class="comment">// @include     http://bbs.2dgal.com/kf_smbox.php</span></div><div class="line"><span class="comment">// @version     1</span></div><div class="line"><span class="comment">// @grant       none</span></div><div class="line"><span class="comment">// ==/UserScript==</span></div><div class="line"><span class="keyword">var</span> myListItems = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'box1'</span>);</div><div class="line"><span class="keyword">var</span> limitedList = myListItems[<span class="number">0</span>].getElementsByTagName(<span class="string">'a'</span>);</div><div class="line"><span class="comment">//console.log(myListItems);</span></div><div class="line"><span class="built_in">console</span>.log(limitedList);</div><div class="line"><span class="comment">//var x = document.getElementById("td").length;//.getElementsByTagName("P")</span></div><div class="line"><span class="built_in">console</span>.log(limitedList.length);</div><div class="line"><span class="keyword">var</span> x = <span class="built_in">Math</span>.random(); <span class="comment">//生成0-1中间的随机数</span></div><div class="line">x = <span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.abs(x) * limitedList.length) <span class="comment">//生成1-limitedList.length（还没有点击的盒子数目）中的随机数</span></div><div class="line"><span class="built_in">console</span>.log(limitedList[x]);</div><div class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>();</div><div class="line">y = limitedList[x];</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> (y)); <span class="comment">//艹y为什么不是string</span></div><div class="line"><span class="comment">//console.log(y.toString());</span></div><div class="line">y = y.toString(); <span class="comment">//转换Object to String</span></div><div class="line"><span class="comment">//y=y.slice(9,-2);//直接看会有多余的HTML标记</span></div><div class="line"><span class="built_in">console</span>.log(y);</div><div class="line">location.replace(y); <span class="comment">//网页重定向</span></div></pre></td></tr></table></figure>
+
 ]]></content>
     <summary type="html">
     <![CDATA[<p>一个有趣的小东西，因为苍雪的盒子，我手动点烦了，顺路学习Js。功能：列举当前未点击的盒子，随机点一个。<br>]]>
@@ -279,6 +308,30 @@ var html = [
       <category term="FireFox" scheme="http://blog.fffgroups.com/tags/FireFox/"/>
     
       <category term="Chrome" scheme="http://blog.fffgroups.com/tags/Chrome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[某些可能需要的东西]]></title>
+    <link href="http://blog.fffgroups.com/2015/01/17/Golang/"/>
+    <id>http://blog.fffgroups.com/2015/01/17/Golang/</id>
+    <published>2015-01-17T03:41:31.000Z</published>
+    <updated>2015-03-02T03:28:58.000Z</updated>
+    <content type="html"><![CDATA[<p>Golang的GAE Tutorial关于python版本<br>我电脑里面有两个python版本，系统%path%中3在2的后面所以默认用3，电脑高级属性中改下%path%中2和3的位置就行了，我却蛋疼的改起了goapp.bat/godoc/gofmt，为下次坑爹做准备，做好记录免得下次坑爹……</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">@echo off</div><div class="line">:: Copyright 2012 Google Inc. All rights reserved.</div><div class="line">:: <span class="operator"><span class="keyword">Use</span> <span class="keyword">of</span> this source code <span class="keyword">is</span> governed <span class="keyword">by</span> the Apache <span class="number">2.0</span></span></div><div class="line">:: license that can be <span class="keyword">found</span> <span class="keyword">in</span> the LICENSE file.</div><div class="line">setlocal</div><div class="line"><span class="keyword">set</span> GOROOT=%~dp0\goroot</div><div class="line"><span class="keyword">set</span> APPENGINE_DEV_APPSERVER=%~dp0\dev_appserver.py</div><div class="line"><span class="keyword">set</span> GOARCH=</div><div class="line"><span class="keyword">set</span> GOBIN=</div><div class="line"><span class="keyword">set</span> GOOS=</div><div class="line">::使用py27</div><div class="line"><span class="keyword">set</span> path=C:\Python27;C:\Python27\Scripts</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Golang的GAE Tutorial关于python版本<br>我电脑里面有两个python版本，系统%path%中3在2的后面所以默认用3，电脑高级属性中改下%path%中2和3的位置就行了，我却蛋疼的改起了goapp.bat/godoc/gofmt，为下次坑爹做准备，]]>
+    </summary>
+    
+      <category term="Golang" scheme="http://blog.fffgroups.com/tags/Golang/"/>
+    
+      <category term="python" scheme="http://blog.fffgroups.com/tags/python/"/>
+    
+      <category term="GAE" scheme="http://blog.fffgroups.com/tags/GAE/"/>
+    
+      <category term="Google" scheme="http://blog.fffgroups.com/tags/Google/"/>
     
   </entry>
   
